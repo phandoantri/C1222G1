@@ -1,0 +1,9 @@
+Begin
+   
+     input a,b,c;
+     max=a
+     if b>max then max=b;
+     else;
+     if c>max then max=c;
+     Display
+End.
