@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>BẢNG TÍNH LƯƠNG THƯỞNG</th>
+    </tr>
+    <tr>
+        <td>Mức lương:<input id="luong" type="number"></td>
+    </tr>
+    <tr>
+        <td>Số giờ làm việc:<input id="gioLamViec" type="number"></td>
+    </tr>
+<tr>
+    <td><button type="button" onclick="check()">Check</button></td>
+</tr>
+
+</table>
+<p id="thuong"></p>
+<script>
+    function check(){
+        let luong=+document.getElementById("luong").value;
+        let gioLam=+document.getElementById("gioLamViec").value;
+        let thuong=+document.getElementById("thuong").value;
+        if(gioLam>=200){
+            thuong=luong*20/100
+        }else if (gioLam>=100){
+            thuong=luong*20/100
+        }else {
+            thuong=0
+        }
+        document.getElementById("thuong").innerHTML="Số tiền thưởng là:"+thuong;
+    }
+
+</script>
+</body>
+</html>

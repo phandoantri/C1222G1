@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let array=[3,5,2,4];
+    let array = [3, 5, 2, 4];
     // let max=array[0];
     // for(let i=1;i<array.length;i++){
     //     if (array[i]>max){
@@ -15,17 +15,17 @@
     // }
     // alert(max)
 
-for(let i=0;i<array.length;i++){
-    for (j=i+1;j<array.length;j++){
-        if(array[i]<array[j]){
-            let a=array[i];
-            array[i]=array[j];
-            array[j]=a;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] < array[j]) {
+                let a = array[i];
+                array[i] = array[j];
+                array[j] = a;
+            }
         }
-    }
 
-}
-document.write(array);
+    }
+    document.write(array);
 </script>
 </body>
 </html>
