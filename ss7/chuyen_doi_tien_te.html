@@ -14,7 +14,7 @@
         <option value="rmb">RMB</option>
         <option value="gbp">GBP</option>
     </select>
-    <input id="oup" type="number">
+
     <select id="to">
         <option value="usd">USD</option>
         <option value="vnd">VND</option>
@@ -23,11 +23,11 @@
         <option value="gbp">GBP</option>
     </select>
     <button onclick="check()" type="button">Check</button>
-
+<p id="oup"></p>
 
 </form>
 <script>
-    function from(x, y) {
+    function change(x, y) {
         switch (x) {
             case "usd":
                 return y;
@@ -48,7 +48,7 @@
 
     }
 
-    function to(x, y) {
+    function changed(x, y) {
         switch (x) {
             case "usd":
                 return y;
@@ -69,7 +69,7 @@
         let a = document.getElementById("int").value;
         let b = document.getElementById("from").value;
         let c = document.getElementById("to").value;
-        let d=to(b,from(a,c));
+        let d=change(c,changed(b,a));
         document.getElementById("oup").innerHTML=d;
 
 
