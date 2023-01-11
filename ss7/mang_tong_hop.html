@@ -6,26 +6,28 @@
 </head>
 <body>
 <script>
+    let a = [];
+    let count = 0;
+    let flag = true;
 
-    // let flag = true;
-    // do {
-    //     let a = [];
-    //     let b = [];
-    //     for (let i = 0; i < 5; i++) {
-    //         a[i] = +prompt("nhap phan tu a");
-    //     }
-    //     for (let i = 0; i < a.length; i++) {
-    //         for (let j = i + 1; j < a.length; j++) {
-    //             if (a[i] === a[j]) {
-    //                 b.push(a[j]);
-    //                 alert("phần tử " + b + "đã trùng");
-    //             } else {
-    //                 flag = false;
-    //             }
-    //         }
-    //     }
-    //
-    // } while (flag);
+
+    do {
+        for (let i = 0; i < 5; i++) {
+               a[i] = +prompt("nhap phan tu a");
+        }
+        for (let j = 0; j < a.length; j++) {
+            for (let k = j + 1; k < a.length; k++) {
+                if (a[j] === a[k]) {
+                    count++;
+                }
+            }
+            if (count === 0) {
+                flag = false;
+            } else {
+                alert("phan tu"+a[j]+ "da trung");
+            }
+        }
+    } while (flag);
 
 
 </script>

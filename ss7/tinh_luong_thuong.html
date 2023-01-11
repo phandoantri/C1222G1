@@ -15,25 +15,27 @@
     <tr>
         <td>Số giờ làm việc:<input id="gioLamViec" type="number"></td>
     </tr>
-<tr>
-    <td><button type="button" onclick="check()">Check</button></td>
-</tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check()">Check</button>
+        </td>
+    </tr>
 
 </table>
 <p id="thuong"></p>
 <script>
-    function check(){
-        let luong=+document.getElementById("luong").value;
-        let gioLam=+document.getElementById("gioLamViec").value;
-        let thuong=+document.getElementById("thuong").value;
-        if(gioLam>=200){
-            thuong=luong*20/100
-        }else if (gioLam>=100){
-            thuong=luong*20/100
-        }else {
-            thuong=0
+    function check() {
+        let luong = +document.getElementById("luong").value;
+        let gioLam = +document.getElementById("gioLamViec").value;
+        let thuong = +document.getElementById("thuong").value;
+        if (gioLam >= 200) {
+            thuong = luong * 20 / 100
+        } else if (gioLam >= 100) {
+            thuong = luong * 20 / 100
+        } else {
+            thuong = 0
         }
-        document.getElementById("thuong").innerHTML="Số tiền thưởng là:"+thuong;
+        document.getElementById("thuong").innerHTML = "Số tiền thưởng là:" + thuong;
     }
 
 </script>
