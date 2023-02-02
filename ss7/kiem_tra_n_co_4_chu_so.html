@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check() {
+        let a = n.split('');
+        if (n >= 1000 && n < 10000) {
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] < a[i + 1]) {
+                    a.splice(i, 1);
+                    break;
+                }
+            }
+            return (a.join(''));
+        } else {
+            return ("-1");
+        }
+    }
+
+    let n = prompt("nhập số cần ktra");
+    alert(check(n));
+
+</script>
+</body>
+</html>

@@ -6,11 +6,38 @@
 </head>
 <body>
 <script>
-    function check() {
-for (let i=0;i<array.length;i++){
 
-}
+    function check(a) {
+        let n = +prompt("Nhập độ dài mảng");
+        for (let i = 0; i < n; i++) {
+            a[i] = +prompt("Nhập số phần tử");
+        }
+        document.write(a+"<br>");
+        let sum = 0;
+        let newArray = [];
+        for (let i = 0; i < a.length-1; i++) {
+            sum = a[i + 1] - a[i];
+            newArray.push(sum);
+        }
+        let flag = true;
+        for (let j = 0; j < newArray.length; j++) {
+            let find = newArray[0];
+            if (find === newArray[j]) {
+                flag = true;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            return "mảng tăng dần đều";
+        } else {
+            return "không phải mảng tăng dần đều";
+        }
     }
+    let array = [];
+    document.write(check(array));
+
 </script>
 </body>
 </html>
