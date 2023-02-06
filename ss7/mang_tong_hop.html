@@ -26,22 +26,29 @@
     //     return false;
     // }
     // let count = 0;
-    let arr = [];
-    let n;
-    do {
-        do {
 
-            for (let i = 0; i < 5; i++) {
-                n = +prompt("nhap phan tu");
-                if (arr.indexOf(n)!==-1){
-                alert("phần tử đẫ trùng")
-                }else {
-                break;}
+    // let arr = [1,2,3];
+    // let c = +prompt("nhap c");
+    // if(arr.indexOf(c) === -1) {
+    //     alert( c + " khong thuoc mang arr");
+    // }
+
+    let n = +prompt("nhap do dai mang");
+    let arr = [];
+    let c;
+
+    for (let i = 0; i < n; i++) {
+        do {
+            c = +prompt("nhap so can kiem tra");
+            if (arr.indexOf(c) === -1) {
+                arr.push(c);
+                break;
+            } else {
+                alert("phan tu da trung , moi nhap lai");
             }
 
-            
-        } while (true)
-    // } while (count < 5)
+        } while (true);
+    }
     document.write(arr);
 
 

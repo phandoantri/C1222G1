@@ -28,16 +28,16 @@
                 this.soTienTrongTaiKhoan = this.soTienTrongTaiKhoan - money;
             }
         }
-
-
     }
 
     let account = new Account("190312", "phan doan tri", 120000);
     document.write("so tai khoan:" + account.soTaiKhoan + ".ten tai khoan : " + account.tenTaiKhoan + ".so tien trong tai khoan : " + account.soTienTrongTaiKhoan + "<br>");
+    // account.setRutTien(+prompt("nhap so tien muon nap"));
     account.setRutTien(10000);
-    document.write("so du trong tai khoan la : " + account.getSoDu() + "<br>");
+    document.write("sau khi rut so tien trong tk la  : " + account.getSoDu() + "<br>");
+    // account.setNapTien(+prompt("nhap so tien muon rut"));
     account.setNapTien(30000);
-    document.write("so du trong tai khoan la : " + account.getSoDu());
+    document.write("sau khi nap so tien  trong tai khoan la : " + account.getSoDu());
 </script>
 </body>
 </html>

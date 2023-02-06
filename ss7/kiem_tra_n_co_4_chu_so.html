@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-    function check() {
+    function check(n) {
         let a = n.split('');
         if (n >= 1000 && n < 10000) {
-            for (let i = 0; i < a.length; i++) {
+            for (let i = 0; i < a.length ; i++) {
                 if (a[i] < a[i + 1]) {
                     a.splice(i, 1);
                     break;
@@ -21,8 +21,9 @@
         }
     }
 
-    let n = prompt("nhập số cần ktra");
-    alert(check(n));
+    let b = prompt("nhập số cần ktra");
+    alert(check(b));
+
 
 </script>
 </body>

@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function check() {
+    function check(a,b,c) {
         if ((a + b > c) && (a + c > b) && (b + c > a) &&
             (a > 0) && (b > 0) && (c > 0)) {
             // Kiểm tra điều các tam giác đặc biệt
@@ -30,10 +30,10 @@
         }
     }
 
-    let a = +prompt("nhập cạnh của tam giác");
-    let b = +prompt("nhập cạnh của tam giác");
-    let c = +prompt("nhập cạnh của tam giác");
-    alert(check(a, b, c));
+    let x = +prompt("nhập cạnh của tam giác");
+    let y = +prompt("nhập cạnh của tam giác");
+    let z = +prompt("nhập cạnh của tam giác");
+    alert(check(x, y, z));
 
 </script>
 </body>
