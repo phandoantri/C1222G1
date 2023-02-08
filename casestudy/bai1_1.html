@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luongRong = +prompt("nhap so tien nhan vien");
+    let tienNhan;
+    let tienThue;
+    if (luongRong >= 15000000) {
+        tienThue = luongRong * 20 / 100;
+        tienNhan = luongRong - tienThue;
+    } else if (luongRong >= 7000000) {
+        tienThue = luongRong * 10 / 100;
+        tienNhan = luongRong - tienThue;
+    } else {
+        tienThue = luongRong * 5 / 100
+        tienNhan = luongRong - tienThue;
+    }
+    alert(tienNhan);
+
+</script>
+</body>
+</html>

@@ -6,39 +6,46 @@
 </head>
 <body>
 <script>
-   let arr=[[3,5,7],[9,5,11]];
-   let count =0;
-   let arr1=[];
-   for(let i=0;i<arr.length;i++){
-       for (let j=0;j<arr[i].length;j++){
-          for (let k=0;k<=arr[i][j].length;k++){
-              if(k%arr[i][j]===0){
-                  count++;
-              }
-          }
 
-           }
-           if (count===2){
-               arr1.push(arr[i][j]);
-       }
-
-
-   }
-   document.write(arr1);
-   
-
-
-    // for (let i = 0; i <= 4; i++) {
-    //     for (let j = 0; j <= 3; j++) {
-    //         if (j === 0 || j === 3 || i === 0 || i === 4) {
-    //             document.write("*");
-    //         } else {
-    //             document.write("&nbsp;&nbsp");
+    // let mang = [];
+    // for (let i = 0; i < 4; i++) {
+    //     mang[i] = +prompt("nhap so");
+    // }
+    // let so = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // let chu = ["mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin"];
+    // for (let i = 0; i < mang.length; i++) {
+    //     for (let j = 0; j < so.length; j++) {
+    //         if (mang[i] === so[j]) {
+    //             alert(chu[j]);
     //         }
     //     }
-    //     document.write("<br>");
     // }
 
+    // let n=+prompt("nhap do dai mang ar");
+    // let ar=[];
+    // for (let i=0;i<n;i++){
+    //     ar[i]=+prompt("nhap phan tu cho mang ar")
+    // }
+    // let sum=0;
+    // for (let i=0;i<ar.length;i++){
+    //     sum+=ar[i];
+    // }
+    // alert(sum);
+    // let n=+prompt("nhap do dai mang ar");
+    // let ar=[];
+    //
+    // for(let i=0;i<n;i++){
+    //     ar[i]=+prompt("nhap phan tu vao mang ar");
+    // }
+    //
+    // function check(){
+    //     let sum=0;
+    //     for(let i=0;i<ar.length;i++){
+    //         sum+=ar[i];
+    //     }
+    //     return sum;
+    // }
+    // alert(check(ar));
 
 
 </script>

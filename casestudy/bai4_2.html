@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhap sau ky tu");
+    let b = a.split('');
+    for (let i = 0; i < b.length; i++) {
+        for (let j = i + 1; j < b.length; j++) {
+            if (a[i] == b[j]) {
+                b.splice(j, 1);
+
+                j--;
+            }
+        }
+    }
+    alert(b);
+    alert(b.length);
+</script>
+</body>
+</html>
