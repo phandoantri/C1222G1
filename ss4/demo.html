@@ -47,6 +47,42 @@
     // }
     // alert(check(ar));
 
+    // function CheckString(str) {
+    //     let a = str.toLowerCase().split(" ");
+    //     for (let i = 0; i < a.length; i++) {
+    //         a[i] = a[i].charAt(0).toUpperCase() + a[i].substring(1);
+    //     }
+    //     return a.join(' ');
+    // }
+    //
+    // function max(arr) {
+    //     let max = arr[0];
+    //     for (let j = 0; j < arr.length; j++) {
+    //         if (arr[j] > max) {
+    //             max = arr[j];
+    //         }
+    //     }br>
+    //     return max;
+    // }
+    //
+    // let a = prompt("Nhập chuỗi bạn muốn chuyển đổi: ");
+    // document.write("Chuỗi từ bạn vừa nhập sau khi chuyển đổi: " + CheckString(a) + '<br>');
+    // let array = CheckString(a).split(' ');
+    // document.write('Chữ dài nhất trong chuỗi là: ' + max(array));
+    let n = +prompt("nhap do dai mang cha");
+    let temps = new Array(n);
+    for (let i = 0; i < n; i++) {
+        let m = +prompt("do dai mang con");
+        let mangCon = new Array(m);
+        for (let j = 0; j < m; j++) {
+            mangCon[j] = +prompt("nhap mang con");
+        }
+        temps[i] = mangCon;
+    }
+
+    console.log(temps);
+
+
 
 </script>
 </body>

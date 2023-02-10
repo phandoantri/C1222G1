@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkMax(a) {
+        let max = a[0][0];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (a[i][j] > max) {
+                    max = a[i][j];
+                }
+
+            }
+
+        }
+        return max;
+    }
+
+    function checkMin(a) {
+        let min = a[0][0];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (a[i][j] < min) {
+                    min = a[i][j];
+                }
+            }
+        }
+        return min;
+
+    }
+
+    let m = +prompt("nhap do dai mang cha");
+    let mangCha = new Array(m);
+    for (let i = 0; i < m; i++) {
+        let n = +prompt("nhap do dai mang con");
+        let mangCon = new Array(n);
+        for (let j = 0; j < n; j++) {
+            mangCon[j] = +prompt("nhap phan tu con");
+        }
+        mangCha[i] = mangCon;
+    }
+    document.write("phan tu trong mang 2 chieu la " + mangCha + "<br>");
+    document.write("phan tu lon nhat trong mang la " + checkMax(mangCha) + "<br>");
+    document.write("phan tu be nhat trong mang la " + checkMin(mangCha));
+
+
+</script>
+</body>
+</html>

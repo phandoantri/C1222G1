@@ -38,16 +38,17 @@
             return false;
         }
     }
-
-    let arr = [];
-    let m = +prompt("nhap do dai mang cha");
-    let n = +prompt("nhap do dai mang con");
-    for (let i = 0; i < m; i++) {
-        arr[i] = [];
-        for (let j = 0; j < n; j++) {
-            arr[i][j] = +prompt("nhap phan tu mang con");
+let m= +prompt("nhap do dai mang cha");
+    let arr = new Array(m);
+    for (let i=0;i<m;i++){
+        let n= +prompt("nhap do dai mang con");
+        let mangCon=new Array(n);
+        for (let j=0;j<n;j++){
+            mangCon[j]=+prompt("nhap phan tu mang con");
         }
+        arr[i]=mangCon;
     }
+
     document.write("phan tu cua mang 2 chieu la " + arr + "<br>");
     let b = [];
     for (let i = 0; i < arr.length; i++) {
