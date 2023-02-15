@@ -10,14 +10,14 @@
     let b = a.split('');
     for (let i = 0; i < b.length; i++) {
         for (let j = i + 1; j < b.length; j++) {
-            if (b[i] == b[j]) {
+            if (b[i] === b[j]) {
                 b.splice(j, 1);
                 j--;
             }
         }
     }
-    alert(b);
-    alert(b.length);
+    document.write("so phan tu khac nhau la " + b + "<br>");
+    document.write("co" + b.length + "phan tu khac nhau");
 </script>
 </body>
 </html>
