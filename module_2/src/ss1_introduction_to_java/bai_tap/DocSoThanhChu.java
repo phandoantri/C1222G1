@@ -7,9 +7,6 @@ public class DocSoThanhChu {
         Scanner sc = new Scanner(System.in);
         System.out.println("nhap so can ktra");
         int number = sc.nextInt();
-        int ones;
-        int ten;
-        int hundred;
         if (number > 0 && number <= 10) {
             switch (number) {
                 case 0:
@@ -48,7 +45,7 @@ public class DocSoThanhChu {
             }
 
         } else if (number > 10 && number < 20) {
-            ones = number % 10;
+            int ones = number % 10;
             switch (ones) {
                 case 1:
                     System.out.println("eleven");
@@ -79,66 +76,66 @@ public class DocSoThanhChu {
                     break;
             }
         } else if (number >= 20 && number < 100) {
-            ten = number / 10;
+            int ten = number / 10;
             switch (ten) {
                 case 2:
-                    System.out.print("twenty");
+                    System.out.print(" twenty");
                     break;
                 case 3:
-                    System.out.print("thirty");
+                    System.out.print(" thirty");
                     break;
                 case 4:
-                    System.out.print("forty");
+                    System.out.print(" forty");
                     break;
                 case 5:
-                    System.out.print("fifty");
+                    System.out.print(" fifty");
                     break;
                 case 6:
-                    System.out.print("sixty");
+                    System.out.print(" sixty");
                     break;
                 case 7:
-                    System.out.print("seventy");
+                    System.out.print(" seventy");
                     break;
                 case 8:
-                    System.out.print("eighty");
+                    System.out.print(" eighty");
                     break;
                 case 9:
-                    System.out.print("ninety");
+                    System.out.print(" ninety");
                     break;
             }
             ten = number % 10;
             switch (ten) {
                 case 1:
-                    System.out.println("one");
+                    System.out.println(" one");
                     break;
                 case 2:
-                    System.out.println("two");
+                    System.out.println(" two");
                     break;
                 case 3:
-                    System.out.println("three");
+                    System.out.println(" three");
                     break;
                 case 4:
-                    System.out.println("four");
+                    System.out.println(" four");
                     break;
                 case 5:
-                    System.out.println("five");
+                    System.out.println(" five");
                     break;
                 case 6:
-                    System.out.println("six");
+                    System.out.println(" six");
                     break;
                 case 7:
-                    System.out.println("seven");
+                    System.out.println(" seven");
                     break;
                 case 8:
-                    System.out.println("eight");
+                    System.out.println(" eight");
                     break;
                 case 9:
-                    System.out.println("nine");
+                    System.out.println(" nine");
                     break;
             }
 
         } else if (number >= 100 && number < 1000) {
-            hundred = number / 100;
+            int hundred = number / 100;
             switch (hundred) {
                 case 1:
                     System.out.print("one hundred");
@@ -168,8 +165,72 @@ public class DocSoThanhChu {
                     System.out.print("nine hundred");
                     break;
             }
-
+            int hangChuc = (number / 10) % 10;
+            {
+                switch (hangChuc) {
+                    case 1:
+                        System.out.print(" ten");
+                        break;
+                    case 2:
+                        System.out.print(" twenty");
+                        break;
+                    case 3:
+                        System.out.print(" thirty");
+                        break;
+                    case 4:
+                        System.out.print(" forty");
+                        break;
+                    case 5:
+                        System.out.print(" fifty");
+                        break;
+                    case 6:
+                        System.out.print(" sixty");
+                        break;
+                    case 7:
+                        System.out.print(" seventy");
+                        break;
+                    case 8:
+                        System.out.print(" eighty");
+                        break;
+                    case 9:
+                        System.out.print(" ninety");
+                        break;
+                }
+            }
+            int hangDonVi = (number % 100) % 10;
+            switch (hangDonVi) {
+                case 1:
+                    System.out.println(" one");
+                    break;
+                case 2:
+                    System.out.println(" two");
+                    break;
+                case 3:
+                    System.out.println(" three");
+                    break;
+                case 4:
+                    System.out.println(" four");
+                    break;
+                case 5:
+                    System.out.println(" five");
+                    break;
+                case 6:
+                    System.out.println(" six");
+                    break;
+                case 7:
+                    System.out.println(" seven");
+                    break;
+                case 8:
+                    System.out.println(" eight");
+                    break;
+                case 9:
+                    System.out.println(" nine");
+                    break;
+            }
         }
 
     }
 }
+
+
+
