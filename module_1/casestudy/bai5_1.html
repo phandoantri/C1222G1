@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let m = +prompt("nhap do dai cho mang cha")
+    let n = +prompt("nhap do dai mang con");
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt("nhap phan tu mang con");
+        }
+    }
+    document.write("phần tử trong mang là" + arr + "<br>");
+    document.write("tong cac so chan trong mang la" + check(arr));
+
+    function check(a) {
+        let sum = 0;
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (a[i][j] % 2 === 0) {
+                    sum += a[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+
+</script>
+</body>
+</html>

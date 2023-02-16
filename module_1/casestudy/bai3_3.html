@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap do dai mang a");
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("nhap phan tu mang a");
+    }
+    let b = [];
+    let m = +prompt("nhap do dai mang b");
+    for (let i = 0; i < m; i++) {
+        b[i] = +prompt("nhap phan tu mang b");
+    }
+
+    let max = a[0] / b[0];
+    let index;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] / b[i] > max) {
+            max = a[i] / b[i];
+            index = i;
+        }
+    }
+    alert(max);
+    alert(index);
+</script>
+
+</body>
+</html>

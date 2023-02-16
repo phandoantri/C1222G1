@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Tên đồ uống</th>
+        <th>Gía tiền</th>
+        <th>Số lượng</th>
+    </tr>
+    <tr>
+        <td>Cafe</td>
+        <td>10000</td>
+        <td><input id="cafe" type="number"></td>
+    </tr>
+    <tr>
+        <td>Cam vắt</td>
+        <td>15000</td>
+        <td><input id="camvat" type="number"></td>
+    </tr>
+    <tr>
+        <td>Nước ép cà rốt</td>
+        <td>15000</td>
+        <td><input id="carot" type="number"></td>
+    </tr>
+    <tr>
+        <td>Nước dừa</td>
+        <td>30000</td>
+        <td><input id="nuocdua" type="number"></td>
+
+    </tr>
+    <tr>
+        <th onclick="tinhtien()">Thành tiền</th>
+        <th colspan="2" id="tongtien"></th>
+    </tr>
+</table>
+<script>
+    function tinhtien() {
+        let cafe = document.getElementById("cafe").value;
+        let camvat = document.getElementById("camvat").value;
+        let carot = document.getElementById("carot").value;
+        let nuocdua = document.getElementById("nuocdua").value;
+        let tinhtien = 10000 * cafe + 15000 * camvat + 15000 * carot + 30000 * nuocdua;
+        document.getElementById("tongtien").innerHTML = tinhtien;
+    }
+
+
+</script>
+</body>
+</html>

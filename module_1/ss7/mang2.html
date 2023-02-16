@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 4, 7, 9, 36];
+    a.push(2);
+    let b = [];
+    for (let i = 0; i < a.length; i++) {
+        for (let j = 0; j < a[i]; j++) {
+            if (Math.sqrt(a[i]) % j === 0) {
+                b.push(a[i]);
+                break;
+            }
+        }
+    }
+    alert(b);
+
+</script>
+</body>
+</html>

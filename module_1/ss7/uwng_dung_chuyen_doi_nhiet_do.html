@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="text-align: center">
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td >
+            <label>
+                <input id="number" type="number">
+            </label>
+        </td>
+        <td >
+            <label>
+                <select id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </label>
+        </td>
+        <td >
+            <label>
+                <select id="to">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </label>
+        </td>
+        <td><button onclick="change()">reverse</button></td>
+    </tr>
+
+</table>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function change() {
+let a=+document.getElementById("number").value;
+let b=document.getElementById("from").value;
+let c=document.getElementById("to").value;
+let result;
+        if (b==="VND"&&c==="USD"){
+result=a/23000;
+        }else if(b==="USD"&&c==="VND"){
+            result=a*23000;
+        }else if(b==="VND"&&c==="VND"){
+            result=a;
+        }else {
+            result=a;
+        }
+        document.getElementById("result").innerHTML="result:"+result ;
+    }
+
+</script>
