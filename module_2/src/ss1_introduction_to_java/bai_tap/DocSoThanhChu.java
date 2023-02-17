@@ -7,7 +7,7 @@ public class DocSoThanhChu {
         Scanner sc = new Scanner(System.in);
         System.out.println("nhap so can ktra");
         int number = sc.nextInt();
-        if (number > 0 && number <= 10) {
+        if (number >= 0 && number <= 10) {
             switch (number) {
                 case 0:
                     System.out.println("zero");

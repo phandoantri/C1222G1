@@ -81,13 +81,32 @@
     // }
     //
     // console.log(temps);
-   for(let i=1;i<=3;i++){
-       console.log("hello");
-       if (i==2){
-           continue;
-       }
-       console.log(i);
-   }
+    let number = 2;
+    let countOfPrime = 0;
+    while (countOfPrime < 20) {
+        let count = 0;
+        if (number === 2 || number === 3) {
+            document.write(number + " là số nguyên tố" + "<br>");
+            countOfPrime++;
+            number++;
+            continue;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                count++;
+                break;
+            }
+        }
+        if (count === 0) {
+            document.write(number + " là số nguyên tố" + "<br>");
+            countOfPrime++;
+        }
+        number++;
+
+
+    }
+
+
 
 </script>
 </body>
