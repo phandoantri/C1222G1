@@ -9,43 +9,53 @@ public class Fan {
     double radius = 5;
     String color = "blue";
 
-      public int setSpeed(int tocDo) {
-        this.speed = tocDo;
+    public int setspeed(int Speed) {
+        this.speed = Speed;
         return this.speed;
-      }
+    }
 
 
-    public int getTocDo() {
+    public int getspeed() {
         return this.speed;
 
     }
-    public boolean getBat(){
-         on=false;
-         return false;
+
+    public boolean geton() {
+        on = false;
+        return false;
     }
-    public boolean getTat(){
-        on=true;
+
+    public boolean getoff() {
+
+        on = true;
         return true;
     }
-    public double setRadius(double banKinh){
-        this.radius=banKinh;
-        return banKinh;
-    }
-    public  double getRadius(){
+
+    public double setradius(double Radius) {
+        this.radius = Radius;
         return this.radius;
     }
-    public String setColor(String mau){
-        this.color=mau;
+
+    public double getRadius() {
+
+        return this.radius;
+    }
+
+    public String setcolor(String Color) {
+        this.color = Color;
         return this.color;
     }
-    public String getColor(){
+
+    public String getColor() {
+
         return this.color;
     }
-    String fan(){
-        if (on){
-            System.out.println("color : "+this.color+",radius : "+this.radius + " ,fan is off");
-        }else {
-            System.out.println("color : " +this.color+", radius :"+this.radius+", speed :" +this.speed+ "fan is on");
+
+    String fan() {
+        if (on) {
+            System.out.println("color : " + this.color + ",radius : " + this.radius + " ,fan is off");
+        } else {
+            System.out.println("color : " + this.color + ", radius :" + this.radius + ", speed :" + this.speed + "fan is on");
         }
         return toString();
     }
