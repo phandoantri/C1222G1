@@ -5,7 +5,8 @@ import java.time.LocalTime;
 import java.util.Date;
 
 public class StopWatch {
-    private long startTime,endTime;
+    private long startTime;
+    private long endTime;
     public StopWatch(){
         this.startTime=System.currentTimeMillis();
     }

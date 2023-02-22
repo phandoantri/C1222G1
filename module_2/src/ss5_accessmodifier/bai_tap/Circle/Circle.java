@@ -13,11 +13,11 @@ public class Circle {
         this.radius = radius;
     }
 
-     protected double getRadius() {
+     public double getRadius() {
         return this.radius;
     }
 
-    protected double getAria() {
+    public double getAria() {
         return this.radius / 2;
     }
 
