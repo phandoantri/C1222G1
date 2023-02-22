@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SumOfColumn {
-    static int tinhTong1Cot(int[][] nums, int n) {
+    static int symbols(int[][] nums, int n) {
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = n; j <= n; j++) {
@@ -26,7 +26,7 @@ public class SumOfColumn {
         System.out.println("mang ban can tinh la " + Arrays.deepToString(array));
         System.out.println("nhap cot ban can tinh tong");
         int k = sc.nextInt();
-        System.out.println("tong o cot" + " " + k + " " + "la" + " " + tinhTong1Cot(array, k));
+        System.out.println("tong o cot" + " " + k + " " + "la" + " " + symbols(array, k));
     }
 }
 

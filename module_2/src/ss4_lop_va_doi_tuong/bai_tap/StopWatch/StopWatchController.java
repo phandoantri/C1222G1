@@ -1,8 +1,6 @@
 package ss4_lop_va_doi_tuong.bai_tap.StopWatch;
 
-import java.util.Scanner;
-
-public class main {
+public class StopWatchController {
     public static void main(String[] args) {
         StopWatch stopWatch=new StopWatch();
         stopWatch.start();

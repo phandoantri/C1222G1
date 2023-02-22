@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SumOfDiagonal {
-    static int tongCheo(int[][] numbers) {
+    static int sumOfDiagonal(int[][] numbers) {
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
                 sum+=numbers[i][i];
@@ -22,7 +22,7 @@ public class SumOfDiagonal {
             }
         }
         System.out.println("mang vua nhap la" + Arrays.deepToString(array));
-        System.out.println("tong duong cheo la" + tongCheo(array));
+        System.out.println("tong duong cheo la" + sumOfDiagonal(array));
     }
 
 }

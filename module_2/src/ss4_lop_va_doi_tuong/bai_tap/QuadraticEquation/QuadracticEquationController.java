@@ -2,7 +2,7 @@ package ss4_lop_va_doi_tuong.bai_tap.QuadraticEquation;
 
 import java.util.Scanner;
 
-public class main {
+public class QuadracticEquationController {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("nhap a");
