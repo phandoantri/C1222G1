@@ -1,4 +1,4 @@
-package ss6_inheritance.circleAndCylinder;
+package ss6_inheritance.CircleAndCylinder;
 
 public class CheckInheritance {
     public static void main(String[] args) {

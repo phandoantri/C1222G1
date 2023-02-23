@@ -1,4 +1,4 @@
-package ss6_inheritance.circleAndCylinder;
+package ss6_inheritance.CircleAndCylinder;
 
 public class CircleAndCylinder {
    private double radius=1;
