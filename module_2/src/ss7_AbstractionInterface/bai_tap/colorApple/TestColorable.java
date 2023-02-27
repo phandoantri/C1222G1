@@ -17,6 +17,7 @@ public class TestColorable {
                 System.out.println(rectangle.getArea());
                 ( (IColorable) shape).howToColor();
             }
+            }
         }
     }
-}
+
