@@ -1,8 +1,8 @@
 package ss12_ArrayList.service;
 
 public interface IProductService {
-    void hienThi();
-    void xoa(String id);
+    void display();
+    void delete(String id);
     void search(String product);
     void addProduct();
 }

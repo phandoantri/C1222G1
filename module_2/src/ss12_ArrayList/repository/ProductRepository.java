@@ -13,16 +13,17 @@ public class ProductRepository implements IRepository{
         productList.add(new Product("vinamilk","1122",13000));
         productList.add(new Product("nutri","1223",12000));
     }
-    Scanner sc=new Scanner(System.in);
+
+
     @Override
-    public void hienThi() {
+    public void display() {
         for (Product product:productList){
             System.out.println(product);
         }
     }
 
     @Override
-    public void xoa(String id) {
+    public void delete(String id) {
         for (int i = 0; i <productList.size() ; i++) {
             if (productList.get(i).getId().equals(id)){
                 productList.remove(productList.get(i));
@@ -43,17 +44,9 @@ public class ProductRepository implements IRepository{
     }
 
     @Override
-    public void addProduct() {
-        System.out.println("nhap ten san pham ");
-        String name=sc.nextLine();
-        System.out.println("nhap id san pham ");
-        String id=sc.nextLine();
-        System.out.println("nhap gia san pham ");
-        double cost=Double.parseDouble(sc.nextLine());
-        Product product=new Product(name,id,cost);
-        productList.add(product);
-        System.out.println("da them thanh cong");
+    public void addProduct(Product product) {
 
+        productList.add(product);
 
     }
 

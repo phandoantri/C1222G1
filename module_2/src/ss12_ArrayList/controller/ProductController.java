@@ -10,7 +10,7 @@ public class ProductController {
     Scanner sc = new Scanner(System.in);
     String choice;
 
-    public void quanLySanPham() {
+    public void productController() {
         do {
             System.out.println("moi chon : \n" +
                     "1.Hien thi san pham \n" +
@@ -21,12 +21,12 @@ public class ProductController {
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
-                    productService.hienThi();
+                    productService.display();
                     break;
                 case "2":
                     System.out.println("nhap ID muon xoa ");
                     String id = sc.nextLine();
-                    productService.xoa(id);
+                    productService.delete(id);
                 case "3":
                     System.out.println("nhap ten tim kiem san pham ");
                     String product = sc.nextLine();
