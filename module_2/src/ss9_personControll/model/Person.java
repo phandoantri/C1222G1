@@ -1,28 +1,22 @@
-package bai_tap_lam_them;
+package ss9_personControll.model;
 
-public class Teacher {
+public class Person {
     private String name;
     private String id;
-    private String dayOfBirth;
-    private boolean gender;
-    private String specialize;
-    public Teacher(String hue, String id, String dayOfBirth, String nu, String vanHoc){
+    private String  dayOfBirth;
+    private String gender;
+
+    public Person() {
 
     }
-
-    public Teacher(String name, String id, String dayOfBirth, boolean gender, String specialize) {
+    public Person(String name, String id, String dayOfBirth, String gender) {
         this.name = name;
         this.id = id;
         this.dayOfBirth = dayOfBirth;
         this.gender = gender;
-        this.specialize = specialize;
-    }
 
-    public Teacher(String name, String id, String dayOfBirth, boolean gender) {
-        this.name=name;
-        this.id=id;
-        this.dayOfBirth=dayOfBirth;
-        this.gender=gender;
+
+
     }
 
     public String getName() {
@@ -49,30 +43,23 @@ public class Teacher {
         this.dayOfBirth = dayOfBirth;
     }
 
-    public boolean isGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getSpecialize() {
-        return specialize;
-    }
-
-    public void setSpecialize(String specialize) {
-        this.specialize = specialize;
     }
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 ", dayOfBirth='" + dayOfBirth + '\'' +
                 ", gender=" + gender +
-                ", specialize='" + specialize + '\'' +
                 '}';
     }
+
+
 }

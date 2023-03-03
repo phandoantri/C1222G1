@@ -29,7 +29,7 @@ public class Test {
 
         }
 
-        Teacher teacher1=new Teacher();
+        Teacher teacher1=new Teacher("hue", "123", "03/07/1997", "nu", "van hoc");
         String specialize=sc.nextLine();
 
     }

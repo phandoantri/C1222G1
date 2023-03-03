@@ -31,6 +31,5 @@ public class ChuoiLienTiep {
             for (Character ch : max) {
                 System.out.print(ch);
             }
-            System.out.println();
         }
 }

@@ -6,6 +6,7 @@ public class Student extends Teacher {
 
     public Student(){
 
+        super("hue", "123", "03/07/1997", "nu", "van hoc");
     }
     public Student( String name,String id,String dayOfBirth,boolean gender ,  String classes, int point) {
         super(name,id,dayOfBirth,gender);
