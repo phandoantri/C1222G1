@@ -13,8 +13,10 @@ public class TeacherRepository implements ITeacherRepository {
     }
     @Override
     public void display() {
-        for(Teacher teacher:teachers){
+        for (Teacher teacher:teachers){
             System.out.println(teacher);
         }
-    }
+
+        }
+
 }

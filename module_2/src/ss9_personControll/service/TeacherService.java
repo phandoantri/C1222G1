@@ -1,9 +1,10 @@
 package ss9_personControll.service;
 
+import ss9_personControll.repository.ITeacherRepository;
 import ss9_personControll.repository.TeacherRepository;
 
 public class TeacherService implements ITeacherService {
-    TeacherRepository teacherRepository = new TeacherRepository();
+    ITeacherRepository teacherRepository = new TeacherRepository();
 
     @Override
     public void display() {
