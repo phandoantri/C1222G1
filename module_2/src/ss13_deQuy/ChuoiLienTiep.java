@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class ChuoiLienTiep {
 
         public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             LinkedList<Character> max = new LinkedList<>();
             LinkedList<Character> list = new LinkedList<>();
 
             System.out.print("Nhập chuỗi: ");
-            String string = input.nextLine();
+            String string = sc.nextLine();
 
 
             for (int i = 0; i < string.length(); i++) {
@@ -28,8 +28,6 @@ public class ChuoiLienTiep {
                 }
             }
 
-            for (Character ch : max) {
-                System.out.print(ch);
-            }
+            System.out.println(max);
         }
 }
