@@ -19,7 +19,7 @@ public class SoLanXuatHien {
                 count=map.get(key);
                 map.put(key,count+1);
             }else {
-                map.put(key,1);
+                map.put(key,count+1);
             }
         }
 
