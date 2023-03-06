@@ -1,12 +1,15 @@
 package ss9_personControll.controller;
 
 import ss9_personControll.service.IStudentService;
+import ss9_personControll.service.ITeacherService;
 import ss9_personControll.service.StudentService;
+import ss9_personControll.service.TeacherService;
 
 import java.util.Scanner;
 
 public class StudentController {
     IStudentService studentService = new StudentService();
+    ITeacherService teacherService=new TeacherService();
     Scanner sc = new Scanner(System.in);
     String choice;
 
@@ -22,6 +25,7 @@ public class StudentController {
             switch (choice) {
                 case "1":
                     studentService.getOn();
+                    teacherService.display();
                     break;
                 case "2":
                     studentService.add();
