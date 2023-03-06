@@ -3,6 +3,7 @@ package ss9_personControll.service;
 import ss9_personControll.model.Student;
 import ss9_personControll.repository.StudentRepository;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class StudentService implements IStudentService {
@@ -10,8 +11,11 @@ public class StudentService implements IStudentService {
     Scanner sc = new Scanner(System.in);
 
     @Override
-    public void display() {
-        studentRepository.display();
+    public void getOn() {
+       List<Student> studentList = studentRepository.getOn();
+        for (Student student:studentList){
+            System.out.println(student);
+        }
     }
 
     @Override

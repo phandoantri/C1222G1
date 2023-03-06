@@ -16,10 +16,8 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public void display() {
-        for (Student student : studentList) {
-            System.out.println(student);
-        }
+    public List<Student> getOn() {
+        return studentList;
     }
 
     @Override

@@ -1,9 +1,7 @@
 package ss9_personControll.controller;
 
 import ss9_personControll.service.IStudentService;
-import ss9_personControll.service.ITeacherService;
 import ss9_personControll.service.StudentService;
-import ss9_personControll.service.TeacherService;
 
 import java.util.Scanner;
 
@@ -23,7 +21,7 @@ public class StudentController {
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
-                    studentService.display();
+                    studentService.getOn();
                     break;
                 case "2":
                     studentService.add();
