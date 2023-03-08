@@ -1,0 +1,5 @@
+Nation{id='1', acronym='AU', name='Australia'}
+Nation{id='2', acronym='VN', name='Viet Nam'}
+Nation{id='3', acronym='L', name='Lao'}
+Nation{id='4', acronym='USA', name='American'}
+Nation{id='5', acronym='GER', name='Germany'}
