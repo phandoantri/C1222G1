@@ -8,15 +8,16 @@ import java.util.List;
 public class TruyenRepository implements ITruyenRepository{
 static List<Truyen> list=new ArrayList<>();
 static {
-    list.add(new Truyen("abc","scs","scs") );
-    list.add(new Truyen("abc","ses","sgs") );
+    list.add(new Truyen("abc","scs","scs","tri") );
+    list.add(new Truyen("abc","ses","sgs","danh") );
 
 }
     @Override
-    public void hienThi() {
+    public List<Truyen> hienThi() {
       for (Truyen truyen:list){
           System.out.println(truyen);
       }
+      return list;
     }
 
     @Override

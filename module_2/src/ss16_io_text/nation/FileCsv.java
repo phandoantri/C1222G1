@@ -1,12 +1,11 @@
 package ss16_io_text.nation;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileCsv {
+
     public static void main(String[] args) {
         Nation nation = new Nation("1", "AU", "Australia");
         Nation nation1 = new Nation("2", "VN", "Viet Nam");
@@ -19,15 +18,23 @@ public class FileCsv {
         list.add(nation2);
         list.add(nation3);
         list.add(nation4);
+        FileReader fileReader=null;
+        BufferedReader bufferedReader=null;
+        
         try {
-            FileWriter fileWriter = new FileWriter("src/ss16_io_text/file.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            for (Nation na : list) {
-                bufferedWriter.write(na.toString());
-                bufferedWriter.newLine();
+             fileReader = new FileReader("src/ss16_io_text/nation/file.txt");
+            bufferedReader = new BufferedReader(fileReader);
+            String line="";
+            while (true){
+                line=bufferedReader.readLine();
+                if (line==null){
+                    break;
+                }
+
+                System.out.println(line);
             }
-            bufferedWriter.close();
-            fileWriter.close();
+            bufferedReader.close();
+            fileReader.close();
         } catch (IOException e) {
             e.fillInStackTrace();
         }

@@ -4,11 +4,13 @@ public class Truyen {
 private String ten;
 private String ma;
 private String tacGia;
+private String nhaXuatBan;
 
-    public Truyen(String ten, String ma, String tacGia) {
+    public Truyen(String ten, String ma, String tacGia,String nhaXuatBan) {
         this.ten = ten;
         this.ma = ma;
         this.tacGia = tacGia;
+        this.nhaXuatBan=nhaXuatBan;
     }
     public Truyen(){
     }
@@ -37,12 +39,21 @@ private String tacGia;
         this.tacGia = tacGia;
     }
 
+    public String getNhaXuatBan() {
+        return nhaXuatBan;
+    }
+
+    public void setNhaXuatBan(String nhaXuatBan) {
+        this.nhaXuatBan = nhaXuatBan;
+    }
+
     @Override
     public String toString() {
         return "Truyen{" +
                 "ten='" + ten + '\'' +
                 ", ma='" + ma + '\'' +
                 ", tacGia='" + tacGia + '\'' +
+                ", nhaXuatBan='" + nhaXuatBan + '\'' +
                 '}';
     }
 }

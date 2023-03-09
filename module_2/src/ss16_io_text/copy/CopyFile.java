@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class CopyFile {
     public static String sourceFile = "src/ss16_io_text/nation/file.txt";
-    private static String targetFile = "src/ss16_io_text/copy/copyFile.txt";
+    public static String targetFile = "src/ss16_io_text/copy/copyFile.txt";
 
     public static void main(String[] args) throws IOException {
         try (FileInputStream in = new FileInputStream(sourceFile);

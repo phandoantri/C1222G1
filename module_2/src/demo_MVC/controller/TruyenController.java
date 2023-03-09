@@ -29,6 +29,8 @@ public class TruyenController {
                     String ma=sc.nextLine();
                     truyenService.xoa(ma);
                     break;
+                case "4":
+                    System.exit(0);
             }
 
         }while (true);
