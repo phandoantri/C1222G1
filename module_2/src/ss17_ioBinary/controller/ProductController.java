@@ -17,6 +17,10 @@ public class ProductController {
             switch (choice){
                 case "1":
                     productService.display();
+                    break;
+                case "2":
+                    productService.add();
+                    break;
 
             }
 

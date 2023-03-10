@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IProductRepo {
     List<Product> display();
+    void add(Product product);
 }
