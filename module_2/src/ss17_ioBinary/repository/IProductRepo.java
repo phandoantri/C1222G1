@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface IProductRepo {
     List<Product> display();
-    void add(List<Product> product);
+    void add(Product product);
+    void search(String id);
 }

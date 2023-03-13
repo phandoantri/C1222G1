@@ -8,15 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ProductService implements IProductService{
+public class ProductService implements IProductService {
 
-    Scanner sc=new Scanner(System.in);
-   private ProductRepo productRepo=new ProductRepo();
+    Scanner sc = new Scanner(System.in);
+    private ProductRepo productRepo = new ProductRepo();
 
     @Override
     public void display() {
-        List<Product> productList=productRepo.display();
-        for (Product product:productList){
+        List<Product> productList = productRepo.display();
+        for (Product product : productList) {
             System.out.println(product);
 
         }
@@ -25,12 +25,19 @@ public class ProductService implements IProductService{
     @Override
     public void add() {
         System.out.println("nhap id ");
-        String id=sc.nextLine();
+        String id = sc.nextLine();
         System.out.println("nhap name ");
-        String name=sc.nextLine();
+        String name = sc.nextLine();
         System.out.println("nhap cost ");
-         double cost=Double.parseDouble(sc.nextLine());
-        Product product=new Product(id,name,cost);
+        double cost = Double.parseDouble(sc.nextLine());
+        Product product = new Product(id, name, cost);
+        productRepo.add(product);
+
+    }
+
+    @Override
+    public void search(String id) {
+        productRepo.search(id);
 
     }
 }

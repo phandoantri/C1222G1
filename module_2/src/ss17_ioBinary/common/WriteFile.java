@@ -9,20 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WriteFile {
-    public static List<Product> write(String path, List<Product> productList) {
+    public static void write(String path, Product product) {
 
         BufferedWriter bufferedWriter;
         try {
-            bufferedWriter = new BufferedWriter(new FileWriter(path));
-            for (Product product1 : productList) {
-                System.out.println(product1.toString());
-                bufferedWriter.newLine();
-            }
+            bufferedWriter = new BufferedWriter(new FileWriter(path, true));
+            bufferedWriter.write(product.toString());
+            bufferedWriter.newLine();
             bufferedWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return productList;
+
 
     }
 }
