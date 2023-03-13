@@ -17,15 +17,13 @@ public class ProductRepo implements IProductRepo {
 
     @Override
     public List<Product> display() {
-        productList=ReadFile.read(PATH);
-        return productList;
+        return  ReadFile.read(PATH);
+
+
     }
 
     @Override
-    public void add(Product product) {
-        productList.add(product);
+    public void add(List<Product> product) {
         WriteFile.write(PATH,product);
-
-
-        }
+    }
 }

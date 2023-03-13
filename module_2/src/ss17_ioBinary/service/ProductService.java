@@ -1,8 +1,10 @@
 package ss17_ioBinary.service;
 
+import ss17_ioBinary.common.WriteFile;
 import ss17_ioBinary.model.Product;
 import ss17_ioBinary.repository.ProductRepo;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -29,6 +31,6 @@ public class ProductService implements IProductService{
         System.out.println("nhap cost ");
          double cost=Double.parseDouble(sc.nextLine());
         Product product=new Product(id,name,cost);
-        productRepo.add(product);
+
     }
 }
