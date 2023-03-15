@@ -14,7 +14,7 @@ public class ProductController {
             System.out.println("nhap chuc nang \n"+
                     "1.hien thi san pham \n"+
                     "2.them san pham\n"+
-                    "3.xoa san pham\n"+
+                    "3.tim san pham theo id\n"+
                     "4.thoat\n"+
                     "moi chon chuc nang ");
             choice=sc.nextLine();
@@ -29,7 +29,8 @@ public class ProductController {
                     System.out.println("nhap id can tim kiem");
                     String id=sc.nextLine();
                     productService.search(id);
-
+                case "4":
+                    System.exit(0);
             }
 
 

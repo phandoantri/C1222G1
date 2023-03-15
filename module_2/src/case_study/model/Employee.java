@@ -1,6 +1,6 @@
 package case_study.model;
 
-public class Employee extends Person{
+public class Employee extends Person {
     private String level;
     private String position;
     private String salary;
@@ -14,8 +14,8 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
-    public Employee( String gender,String id, String name, String dayOfBirth, String cmndOfNumber, String phoneNumber, String email, String level, String position, String salary) {
-        super(gender,id, name, dayOfBirth, cmndOfNumber, phoneNumber, email);
+    public Employee(String gender, String id, String name, String dayOfBirth, String cmndOfNumber, String phoneNumber, String email, String level, String position, String salary) {
+        super(gender, id, name, dayOfBirth, cmndOfNumber, phoneNumber, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
@@ -44,4 +44,10 @@ public class Employee extends Person{
     public void setSalary(String salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return super.getGender() + "," + super.getId() + "," + super.getName() + "," + super.getDayOfBirth() + "," + super.getCmndOfNumber() + "," + super.getPhoneNumber() + "," + super.getEmail() + "," + level + "," + position + "," + salary;
+    }
+
 }

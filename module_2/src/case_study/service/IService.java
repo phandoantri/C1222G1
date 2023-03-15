@@ -6,5 +6,5 @@ import java.util.Objects;
 public interface IService {
 void display();
 void add();
-void edit();
+
 }

@@ -27,12 +27,15 @@ public class ProductController {
                     System.out.println("nhap ID muon xoa ");
                     String id = sc.nextLine();
                     productService.delete(id);
+                    break;
                 case "3":
                     System.out.println("nhap ten tim kiem san pham ");
                     String product = sc.nextLine();
                     productService.search(product);
+                    break;
                 case "4":
                     productService.addProduct();
+                    break;
             }
 
         } while (true);

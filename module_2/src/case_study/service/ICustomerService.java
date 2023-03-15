@@ -6,6 +6,6 @@ public interface ICustomerService extends IService{
     @Override
     void add();
 
-    @Override
-    void edit();
+//    @Override
+//    void edit(String name);
 }
