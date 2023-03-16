@@ -1,19 +1,19 @@
 package case_study.model;
 
-public class House extends Facility{
+public class House extends Facility {
     private String roomStandard;
-    private String numberOfFloor;
+    private int numberOfFloor;
 
     public House() {
     }
 
-    public House(String roomStandard, String numberOfFloor) {
+    public House(String roomStandard, int numberOfFloor) {
         this.roomStandard = roomStandard;
         this.numberOfFloor = numberOfFloor;
     }
 
-    public House(String serviceName, String usableAria, String taxCost, int maxPeople, String rentalType, String roomStandard, String numberOfFloor) {
-        super(serviceName, usableAria, taxCost, maxPeople, rentalType);
+    public House(String serviceName, double usableAria, double rantCost, int maxPeople, String rentalType, String roomStandard, int numberOfFloor) {
+        super(serviceName, usableAria, rantCost, maxPeople, rentalType);
         this.roomStandard = roomStandard;
         this.numberOfFloor = numberOfFloor;
     }
@@ -26,11 +26,16 @@ public class House extends Facility{
         this.roomStandard = roomStandard;
     }
 
-    public String getNumberOfFloor() {
+    public int getNumberOfFloor() {
         return numberOfFloor;
     }
 
-    public void setNumberOfFloor(String numberOfFloor) {
+    public void setNumberOfFloor(int numberOfFloor) {
         this.numberOfFloor = numberOfFloor;
+    }
+
+    @Override
+    public String toString() {
+        return super.getServiceName() + "," + super.getUsableAria() + "," + super.getRantCost() + "," + super.getMaxPeople() + "," + super.getRentalType() + "," + roomStandard + "," + numberOfFloor;
     }
 }

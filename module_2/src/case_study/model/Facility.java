@@ -1,21 +1,19 @@
 package case_study.model;
 
-import java.util.Date;
-
 public abstract class Facility {
     private String serviceName;
-    private String usableAria;
-    private String taxCost;
+    private double usableAria;
+    private double rantCost;
     private int maxPeople;
     private String rentalType;
 
     public Facility() {
     }
 
-    public Facility(String serviceName, String usableAria, String taxCost, int maxPeople, String rentalType) {
+    public Facility(String serviceName, double usableAria, double rantCost, int maxPeople, String rentalType) {
         this.serviceName = serviceName;
         this.usableAria = usableAria;
-        this.taxCost = taxCost;
+        this.rantCost = rantCost;
         this.maxPeople = maxPeople;
         this.rentalType = rentalType;
     }
@@ -28,20 +26,20 @@ public abstract class Facility {
         this.serviceName = serviceName;
     }
 
-    public String getUsableAria() {
+    public double getUsableAria() {
         return usableAria;
     }
 
-    public void setUsableAria(String usableAria) {
+    public void setUsableAria(double usableAria) {
         this.usableAria = usableAria;
     }
 
-    public String getTaxCost() {
-        return taxCost;
+    public double getRantCost() {
+        return rantCost;
     }
 
-    public void setTaxCost(String taxCost) {
-        this.taxCost = taxCost;
+    public void setRantCost(double rantCost) {
+        this.rantCost = rantCost;
     }
 
     public int getMaxPeople() {
@@ -62,12 +60,6 @@ public abstract class Facility {
 
     @Override
     public String toString() {
-        return "Facility{" +
-                "serviceName='" + serviceName + '\'' +
-                ", usableAria='" + usableAria + '\'' +
-                ", taxCost='" + taxCost + '\'' +
-                ", maxPeople=" + maxPeople +
-                ", rentalType='" + rentalType + '\'' +
-                '}';
+        return serviceName + "," + usableAria + "," + rantCost + "," + maxPeople + "," + rentalType;
     }
 }

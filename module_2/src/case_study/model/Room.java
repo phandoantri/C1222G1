@@ -10,8 +10,8 @@ public class Room extends Facility {
         this.freeServiceIncluded = freeServiceIncluded;
     }
 
-    public Room(String serviceName, String usableAria, String taxCost, int maxPeople, String rentalType, String freeServiceIncluded) {
-        super(serviceName, usableAria, taxCost, maxPeople, rentalType);
+    public Room(String serviceName, double usableAria, double rantCost, int maxPeople, String rentalType, String freeServiceIncluded) {
+        super(serviceName, usableAria, rantCost, maxPeople, rentalType);
         this.freeServiceIncluded = freeServiceIncluded;
     }
 
@@ -21,5 +21,10 @@ public class Room extends Facility {
 
     public void setFreeServiceIncluded(String freeServiceIncluded) {
         this.freeServiceIncluded = freeServiceIncluded;
+    }
+
+    @Override
+    public String toString() {
+        return super.getServiceName() + "," + super.getUsableAria() + "," + super.getRantCost() + "," + super.getMaxPeople() + "," + super.getRentalType() + "," + freeServiceIncluded;
     }
 }

@@ -2,20 +2,20 @@ package case_study.model;
 
 public class Villa extends Facility{
     private String roomStandard;
-    private String swimmingPoolAria;
-    private String numberOfFloor;
+    private double swimmingPoolAria;
+    private int numberOfFloor;
 
     public Villa() {
     }
 
-    public Villa(String roomStandard, String swimmingPoolAria, String numberOfFloor) {
+    public Villa(String roomStandard, double swimmingPoolAria, int numberOfFloor) {
         this.roomStandard = roomStandard;
         this.swimmingPoolAria = swimmingPoolAria;
         this.numberOfFloor = numberOfFloor;
     }
 
-    public Villa(String serviceName, String usableAria, String taxCost, int maxPeople, String rentalType, String roomStandard, String swimmingPoolAria, String numberOfFloor) {
-        super(serviceName, usableAria, taxCost, maxPeople, rentalType);
+    public Villa(String serviceName, double usableAria, double rantCost, int maxPeople, String rentalType, String roomStandard, double swimmingPoolAria, int numberOfFloor) {
+        super(serviceName, usableAria, rantCost, maxPeople, rentalType);
         this.roomStandard = roomStandard;
         this.swimmingPoolAria = swimmingPoolAria;
         this.numberOfFloor = numberOfFloor;
@@ -29,19 +29,24 @@ public class Villa extends Facility{
         this.roomStandard = roomStandard;
     }
 
-    public String getSwimmingPoolAria() {
+    public double getSwimmingPoolAria() {
         return swimmingPoolAria;
     }
 
-    public void setSwimmingPoolAria(String swimmingPoolAria) {
+    public void setSwimmingPoolAria(double swimmingPoolAria) {
         this.swimmingPoolAria = swimmingPoolAria;
     }
 
-    public String getNumberOfFloor() {
+    public int getNumberOfFloor() {
         return numberOfFloor;
     }
 
-    public void setNumberOfFloor(String numberOfFloor) {
+    public void setNumberOfFloor(int numberOfFloor) {
         this.numberOfFloor = numberOfFloor;
+    }
+
+    @Override
+    public String toString() {
+        return super.getServiceName()+","+super.getUsableAria()+","+super.getRantCost()+","+super.getMaxPeople()+","+super.getRentalType()+","+roomStandard+","+swimmingPoolAria+","+numberOfFloor;
     }
 }

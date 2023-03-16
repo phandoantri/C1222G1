@@ -7,7 +7,11 @@ import java.util.Scanner;
 public class FuramaController {
     IEmployeeService iEmployeeService = new EmployeeService();
     ICustomerService iCustomerService = new CustomerService();
-    IFacilityService iFacilityService = new FacilityService();
+    IVillageService iVillageService= new VillageService();
+    IHouseService iHouseService=new HouseService();
+    IRoomService iRoomService=new RoomService();
+
+
 
     Scanner sc = new Scanner(System.in);
     int choice;
@@ -87,8 +91,55 @@ public class FuramaController {
                         choice3 = Integer.parseInt(sc.nextLine());
                         switch (choice3) {
                             case 1:
-                                iFacilityService.display();
+                                loop4:
+                                do {
+                                        System.out.println("1.Display list house\n"+
+                                                "2.Display list room\n"+
+                                                "3.Display list Village\n"+
+                                                "4.exit");
+                                        int choice4 =Integer.parseInt(sc.nextLine());
+
+                                        switch (choice4){
+                                            case 1:
+                                                iHouseService.display();
+                                                break ;
+                                            case 2:
+                                                iRoomService.display();
+                                                break ;
+                                            case 3:
+                                                iVillageService.display();
+                                                break ;
+                                            case 4:
+                                                break loop4;
+                                    }
+
+
+
+                                }while (true);
                                 break;
+                            case 2:
+                                loop5:
+                                do {
+                                    System.out.println("1.Add new house\n"+
+                                            "2.Add new room\n"+
+                                            "3.Add new Village\n"+
+                                            "4.Exit");
+                                    int choice5=Integer.parseInt(sc.nextLine());
+                                    switch (choice5){
+                                        case 1:
+                                            iHouseService.add();
+                                            break ;
+                                        case 2:
+                                            iRoomService.add();
+                                            break ;
+                                        case 3:
+                                            iVillageService.add();
+                                            break ;
+                                        case 4:
+                                            break loop5;
+                                    }
+                                }while (true);
+                                break ;
                             case 4:
                                 break loop3;
                         }
