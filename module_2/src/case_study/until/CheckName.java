@@ -9,10 +9,6 @@ public class CheckName {
     public static boolean checkName(String name){
         Pattern pattern=Pattern.compile(CHECKNAME_REGEX);
         Matcher matcher=pattern.matcher(name);
-        if (matcher.matches()){
-            return true;
-        }else {
-            return false;
-        }
+        return matcher.matches();
     }
 }

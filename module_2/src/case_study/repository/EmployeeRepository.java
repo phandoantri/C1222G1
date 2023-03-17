@@ -52,7 +52,7 @@ public class EmployeeRepository implements IEmployeeRepository {
                 System.out.println("enter position");
                 String position=sc.nextLine();
                 System.out.println("enter salary ");
-                String salary=sc.nextLine();
+                double salary=Double.parseDouble(sc.nextLine());
                 employeeList.get(i).setGender(gender);
                 employeeList.get(i).setId(id);
                 employeeList.get(i).setName(names);

@@ -26,9 +26,9 @@ public class ReadFileVillage {
             bufferedReader.close();
 
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            e.fillInStackTrace();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.fillInStackTrace();
         }
         return villaList;
     }

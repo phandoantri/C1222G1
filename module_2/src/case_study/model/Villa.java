@@ -1,6 +1,6 @@
 package case_study.model;
 
-public class Villa extends Facility{
+public class Villa extends Facility {
     private String roomStandard;
     private double swimmingPoolAria;
     private int numberOfFloor;
@@ -47,6 +47,6 @@ public class Villa extends Facility{
 
     @Override
     public String toString() {
-        return super.getServiceName()+","+super.getUsableAria()+","+super.getRantCost()+","+super.getMaxPeople()+","+super.getRentalType()+","+roomStandard+","+swimmingPoolAria+","+numberOfFloor;
+        return super.getServiceName() + "," + super.getUsableAria() + "," + super.getRantCost() + "," + super.getMaxPeople() + "," + super.getRentalType() + "," + roomStandard + "," + swimmingPoolAria + "," + numberOfFloor;
     }
 }

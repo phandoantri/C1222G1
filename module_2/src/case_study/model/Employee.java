@@ -3,18 +3,18 @@ package case_study.model;
 public class Employee extends Person {
     private String level;
     private String position;
-    private String salary;
+    private double salary;
 
     public Employee() {
     }
 
-    public Employee(String level, String position, String salary) {
+    public Employee(String level, String position, double salary) {
         this.level = level;
         this.position = position;
         this.salary = salary;
     }
 
-    public Employee(String gender, String id, String name, String dayOfBirth, String cmndOfNumber, String phoneNumber, String email, String level, String position, String salary) {
+    public Employee(String gender, String id, String name, String dayOfBirth, String cmndOfNumber, String phoneNumber, String email, String level, String position, double salary) {
         super(gender, id, name, dayOfBirth, cmndOfNumber, phoneNumber, email);
         this.level = level;
         this.position = position;
@@ -37,11 +37,11 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public String getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 

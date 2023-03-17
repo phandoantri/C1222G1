@@ -20,7 +20,7 @@ public class ReadFileEmployee {
             String[] tempArr;
             while ((temp = bufferedReader.readLine()) != null) {
                 tempArr = temp.split(",");
-                employee = new Employee(tempArr[0], tempArr[1],tempArr[2],tempArr[3],tempArr[4],tempArr[5],tempArr[6],tempArr[7],tempArr[8],tempArr[9]);
+                employee = new Employee(tempArr[0], tempArr[1],tempArr[2],tempArr[3],tempArr[4],tempArr[5],tempArr[6],tempArr[7],tempArr[8],Double.parseDouble(tempArr[9]));
                 employeeList.add(employee);
             }
 

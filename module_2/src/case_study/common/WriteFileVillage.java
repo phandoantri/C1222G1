@@ -11,7 +11,7 @@ public class WriteFileVillage {
     public static void Write(String path, Villa villa){
         BufferedWriter bufferedWriter=null;
         try {
-            bufferedWriter=new BufferedWriter(new FileWriter(path));
+            bufferedWriter=new BufferedWriter(new FileWriter(path,true));
             bufferedWriter.write(villa.toString());
             bufferedWriter.newLine();
             bufferedWriter.close();
