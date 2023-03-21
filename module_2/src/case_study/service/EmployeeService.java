@@ -6,7 +6,13 @@ import case_study.until.CheckEmail;
 import case_study.until.CheckNamePeople;
 import case_study.until.CheckPhoneNumber;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -44,6 +50,7 @@ public class EmployeeService implements IEmployeeService {
         }
         System.out.println("enter day of birth ");
         String dayOfBirth = sc.nextLine();
+
         System.out.println("enter cnmdNumber ");
         String cmndNumber = sc.nextLine();
         System.out.println("enter phone number ");

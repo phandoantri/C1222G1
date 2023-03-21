@@ -42,11 +42,19 @@ public class RoomService implements IRoomService {
             rantCost = Double.parseDouble(sc.nextLine());
         }
         System.out.println("enter max people ");
-        int maxPeople = Integer.parseInt(sc.nextLine());
-        while (maxPeople < 0 || maxPeople > 20) {
-            System.out.println("max people must be greater than 0 and less than 20");
-            System.out.println("enter again ");
-            maxPeople = Integer.parseInt(sc.nextLine());
+        int maxPeople = 0;
+        while (true) {
+            try {
+                maxPeople=Integer.parseInt(sc.nextLine());
+                if (maxPeople<0||maxPeople>20){
+                    System.out.println("max people must be greater 0 and less than 20 and integer");
+                    continue;
+                }
+                break;
+            }catch (Exception e){
+                System.out.println("max people must be greater than 0 and less than 20 and Integer number ");
+                System.out.println("enter again ");
+            }
         }
         System.out.println("enter rental type ");
         String rentalType = sc.nextLine();
