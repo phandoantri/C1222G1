@@ -47,6 +47,6 @@ public class Dress {
                 '}';
     }
     public String toCSV(){
-        return name+","+color+","+color;
+        return name+","+color+","+cost;
     }
 }
