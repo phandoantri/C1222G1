@@ -68,9 +68,11 @@ inner join order_product on customer.id=order_product.customer_id
 inner join product on order_product.customer_id=product.product_id;
 select customer.customer_name from customer
 where id not in (1,2);
-select order_detail.order_id,order_product.order_date,product.product_prime from product
-inner join order_detail on product.product_id=order_detail.product_id
-inner join order_product on order_detail.order_id=order_product.order_id;
+select order_detail.order_id,order_product.order_date,sum(product.product_prime*order_detail.order_quality) as prime_total from customer
+inner join order_product on customer.id=order_product.customer_id
+inner join order_detail on order_product.order_id=order_detail.order_id
+inner join product on order_detail.product_id=product.product_id
+group by order_id;
 
 
 
