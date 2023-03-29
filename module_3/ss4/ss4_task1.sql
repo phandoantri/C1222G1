@@ -47,7 +47,7 @@ values ('Hung', 'Ha Noi', '0912113113', 1, 1);
 insert into student (student_name, address, status, class_id)
 values ('Hoa', 'Hai phong', 1, 1);
 insert into student (student_name, address, phone, status, class_id)
-values ('Manh', 'HCM', '0123123123', 0, 2);
+values ('Manh', 'HCM', '0123123123', 0, 1);
 select*from student;
 
 
@@ -63,3 +63,18 @@ insert into mark (sub_id, student_id, mark, exam_times)
 values (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
+select * from mark;
+
+select * from student_subject
+where credit = (select max(credit) from student_subject);
+
+select * ,max(mark) max_point from student_subject 
+inner join mark on mark.sub_id=student_subject.sub_id
+where mark = (select max(mark) from mark);
+
+select *,avg(mark) from student
+join mark on student.student_id=mark.student_id
+group by mark.student_id
+order by mark desc;
+
+
