@@ -162,7 +162,7 @@ values 	(1,'Villa Beach Front', 25000, 10000000, 10 , 'vip', 'Có hồ bơi', 
 		(6,'Room Twin 02', 3000, 900000, 2, 'normal',	'Có tivi', null, null, 4, 3);
 select * from service;
 
-insert into accompanied_service(accompanied_service_id,accompanied_service_name,cost,unit,status)
+insert into accompanied_service(accompanied_service_id,accompanied_service_name, cost, unit, status)
 values 	(1,'Karaoke', 10000, 'giờ',	'tiện nghi, hiện tại'),
 		(2,'Thuê xe máy', 10000, 'chiếc', 'hỏng 1 xe'),
 		(3,'Thuê xe đạp', 20000, 'chiếc', 'tốt'),
@@ -182,7 +182,7 @@ values 	(1,'2020-12-08', '2020-12-08', 0, 3, 1,3),
 		(8,'2021-06-17', '2021-06-18', 150000, 3, 4, 1),
 		(9,'2020-11-19', '2020-11-19', 0, 3, 4, 3),
 		(10,'2021-04-12', '2021-04-14', 0, 10, 3, 5),
-		(11,'2021-04-25', '2021-04-25', 0, 2, 2,	1),
+		(11,'2021-04-25', '2021-04-25', 0, 2, 2, 1),
 		(12,'2021-05-25', '2021-05-27', 0, 7, 10, 1);
 select * from contract;
 
@@ -196,3 +196,42 @@ values 	(1,5,2,4),
         (7,2,1,2),
         (8,2,12,2);
 select * from contract_detail;
+
+-- 2.Hiển thị thông tin của tất cả nhân viên có trong hệ thống 
+-- có tên bắt đầu là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 kí tự.
+select * from employee
+where name like '% h%' or name like '% t%' or name like '% k%' and length(name)<=15;
+
+-- 3.Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi và có địa chỉ ở “Đà Nẵng” hoặc “Quảng Trị”.
+select *  from  customer
+where ((year(curdate())-year(day_of_birth))>18 and (year(curdate())-year(day_of_birth))<50) and (address like '%Đà Nẵng%' or address like '%Quảng Trị%');
+
+
+-- 4.Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách hàng.
+-- Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
+select customer.id ,customer.name_customer ,count(contract.contract_id) as number_booking from customer_type
+join customer on customer_type.customer_type_id=customer.type_customer_id
+join contract on customer.id=contract.customer_id
+where customer_type.customer_type_name='Diamond'
+group by customer.id
+order by id;
+
+
+-- Hiển thị ma_khach_hang, ho_ten, ten_loai_khach,ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien
+-- (Với tổng tiền được tính theo công thức như sau: Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet)
+-- cho tất cả các khách hàng đã từng đặt phòng. (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
+select customer.id,customer.name_customer,customer_type.customer_type_name,contract.contract_id,
+service.service_name,contract.start_day,contract.end_day,service.rental_costs+ifnull((contract_detail.quantity*accompanied_service.cost),0) as total from customer_type 
+join customer on customer_type.customer_type_id=customer.type_customer_id
+join contract on customer.id=contract.customer_id
+left join contract_detail on contract.contract_id=contract_detail.contract_id
+left join accompanied_service on contract_detail.accompanied_service_id=accompanied_service.accompanied_service_id
+join service  on contract.service_id=service.service_id
+group by customer.id
+order by customer.id;
+
+
+
+
+
+
