@@ -231,7 +231,65 @@ group by customer.id
 order by customer.id;
 
 
+-- 6.Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được
+-- khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
+select service.service_id,service.service_name,service.aria,service.rental_costs,service_type.service_type_name from service_type
+join service on service_type.service_type_id=service.service_type_id
+join contract on service.service_id=contract.service_id
+join customer  on contract.customer_id=customer.id
+where month(contract.start_day) not in (1,2,3) and year(contract.start_day) not in (2021) 
+group by service.service_id;
 
 
+-- 7.Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu của tất cả các loại
+-- dịch vụ đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
+select service.service_id,service.service_name,service.aria,service.max_peope,service.rental_costs,service_type.service_type_name from service_type
+join service on service_type.service_type_id=service.service_type_id
+left join contract on service.service_id=contract.service_id
+-- thieu dk
+group by service.service_id;
 
 
+-- 8.Hiển thị thông tin ho_ten khách hàng có trong hệ thống, với yêu cầu ho_ten không trùng nhau.
+-- cach 1
+select customer.name_customer from customer 
+group by customer.name_customer;
+-- cach 2
+select customer.name_customer from customer
+union
+select customer.name_customer from customer;
+-- cach 3
+select distinct  customer.name_customer from customer;
+
+
+-- 9.Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2021
+-- thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
+select month(end_day),count(contract.customer_id) as number_order from contract
+join customer on contract.customer_id=customer.id
+where year(contract.end_day)=2021
+group by customer.id
+order by month(end_day);
+
+-- 10.Hiển thị thông tin tương ứng với từng hợp đồng thì đã sử dụng bao nhiêu dịch vụ đi kèm.
+-- Kết quả hiển thị bao gồm ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc,
+-- so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem).
+
+select contract.contract_id,contract.start_day,contract.end_day,contract.deposit,sum(contract_detail.quantity) from contract
+left join contract_detail on contract.contract_id=contract_detail.contract_id
+left join accompanied_service on contract_detail.accompanied_service_id=accompanied_service.accompanied_service_id
+group by contract.contract_id;
+
+
+-- 11.Hiển thị thông tin các dịch vụ đi kèm đã được sử dụng bởi những khách hàng có ten_loai_khach là
+-- “Diamond” và có dia_chi ở “Vinh” hoặc “Quảng Ngãi”.
+select accompanied_service.accompanied_service_id,accompanied_service.accompanied_service_name,accompanied_service.cost,accompanied_service.unit,accompanied_service.status from accompanied_service
+join contract_detail on accompanied_service.accompanied_service_id=contract_detail.accompanied_service_id
+join contract on contract_detail.contract_id=contract.contract_id
+join customer on contract.customer_id=customer.id
+join customer_type on customer.type_customer_id=customer_type.customer_type_id
+where customer.address like '%vinh%' or customer.address like '%Quảng Ngãi%' and  customer_type.customer_type_name='Diamond' ;
+
+-- 12.Hiển thị thông tin ma_hop_dong, ho_ten (nhân viên), ho_ten (khách hàng), so_dien_thoai (khách hàng), 
+-- ten_dich_vu, so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem),
+-- tien_dat_coc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2020
+-- nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2021.
