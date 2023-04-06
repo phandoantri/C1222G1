@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=+prompt("nhap so a")
+    while (a<10||a>100){
+        a= +prompt("nhap lai")
+    }
+
+    let n=a%10
+    let m=Math.floor(a/10)
+    if (n>m){
+        alert("ok")
+    }else {
+        alert("not ok")
+    }
+</script>
+</body>
+</html>
