@@ -5,8 +5,8 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "calculatorServlet", value = "/calculator")
-public class calculatorServlet extends HttpServlet {
+@WebServlet(name = "CalculatorServlet", value = "/calculator")
+public class CalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int number1 = Integer.parseInt(request.getParameter("number1"));
@@ -24,13 +24,18 @@ public class calculatorServlet extends HttpServlet {
                 result = number1 * number2;
                 break;
             case "chia":
+                try {
+                    number2 = 0;
+                } catch (ArithmeticException e) {
+                    System.out.println(e);
+                }
                 result = number1 / number2;
                 break;
         }
-        request.setAttribute("number1",number1);
-        request.setAttribute("number2",number2);
-        request.setAttribute("result",result);
-        request.getRequestDispatcher("/ss10_bai_2.jsp").forward(request,response);
+        request.setAttribute("number1", number1);
+        request.setAttribute("number2", number2);
+        request.setAttribute("result", result);
+        request.getRequestDispatcher("/ss10_bai_2.jsp").forward(request, response);
     }
 
     @Override
