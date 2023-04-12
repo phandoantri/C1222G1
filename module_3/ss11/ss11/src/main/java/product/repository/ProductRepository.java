@@ -27,15 +27,12 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public List<Product> findByName(String name) {
-        List<Product> products=new ArrayList<>();
-        for (Product product:productList){
-            if (product.getName().contains(name)){
-                products.add(product);
-            }
-        }
-        return products;
+    public Product findByName(String name) {
+for (Product product:productList){
+    if (product.getName().equals(name)){
+        return product;
     }
-
-
+}
+        return null;
+    }
 }

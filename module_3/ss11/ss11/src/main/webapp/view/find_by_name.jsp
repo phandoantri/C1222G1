@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form method="post">
     <div class="input-group">
         <label for="name"></label>
         <input type="text"
