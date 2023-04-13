@@ -23,8 +23,15 @@ public class ProductServlet extends HttpServlet {
             case "create":
                 request.getRequestDispatcher("/view/create.jsp").forward(request, response);
                 break;
-            case "findByName":
-                request.getRequestDispatcher("/view/find_by_name.jsp").forward(request, response);
+            case "search":
+                String name=request.getParameter("name");
+                request.setAttribute("productList", iProductService.findByName(name));
+                request.getRequestDispatcher("/view/list.jsp").forward(request, response);
+                break;
+            case "delete":
+                int idDelete=Integer.parseInt(request.getParameter("id"));
+                iProductService.deleteId(idDelete);
+                response.sendRedirect("/product");
                 break;
             default:
                 request.setAttribute("productList", iProductService.getOn());
@@ -48,11 +55,12 @@ public class ProductServlet extends HttpServlet {
                 request.setAttribute("product", iProductService.getOn());
                 request.getRequestDispatcher("/view/create.jsp").forward(request, response);
                 break;
-            case "findByName":
-                String nameSearch = request.getParameter("name");
-                request.setAttribute("productSearch", iProductService.findByName(nameSearch));
-                request.getRequestDispatcher("/view/list.jsp").forward(request, response);
-                break;
+            case "update":
+                int idUpdate=Integer.parseInt(request.getParameter("id"));
+                String nameUpdate=request.getParameter("name");
+                int costUpdate= Integer.parseInt(request.getParameter("cost"));
+                Product product1=new Product(idUpdate,nameUpdate,costUpdate);
+                iProductService.update(product1);
 
 
         }

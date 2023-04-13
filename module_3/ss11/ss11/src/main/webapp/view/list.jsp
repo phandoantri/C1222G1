@@ -12,51 +12,49 @@
     <title>Title</title>
 </head>
 <a href="/product?action=create">create</a>
-<a href="/product?action=findByName">search</a>
 <body>
-<form action="">
-  <table class="table">
+<form action="/product">
+    <input type="text" name="name">
+    <input type="hidden" name="action" value="search">
+    <button type="submit">search</button>
+</form>
+<table class="table">
 
     <thead>
     <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>cost</th>
+        <th>id</th>
+        <th>name</th>
+        <th>cost</th>
+        <th>delete</th>
     </tr>
     </thead>
     <tbody>
     <c:forEach var="product" items="${productList}">
-      <tr>
-        <td scope="row">${product.getId()}</td>
-        <td>${product.getName()}</td>
-        <td>${product.getCost()}</td>
-      </tr>
+        <tr>
+            <td scope="row">${product.getId()}</td>
+            <td>${product.getName()}</td>
+            <td>${product.getCost()}</td>
+            <td>
+                <button ><a href="/product?action=delete&id=${product.getId()}">delete</a></button>
+            </td>
+            <td>
+                <button><a href="/product?action=update&id=${product.getId()} ${product.getName()} ${product.getCost()}">update</a></button>
+            </td>
+        </tr>
     </c:forEach>
-
     </tbody>
-  </table>
-  <table class="table">
-
-    <thead>
-    <tr>
-      <th>id</th>
-      <th>name</th>
-      <th>cost</th>
-    </tr>
-    </thead>
-    <tbody>
-    <c:forEach var="product" items="${productSearch}">
-      <tr>
-        <td scope="row">${product.getId()}</td>
-        <td>${product.getName()}</td>
-        <td>${product.getCost()}</td>
-      </tr>
-    </c:forEach>
-
-    </tbody>
-  </table>
-</form>
-
+</table>
 
 </body>
 </html>
+<script>
+    function deleteId(id) {
+        document.getElementById("idDelete").value=id;
+    }
+    function update(id,name,cost){
+        document.getElementById("idUpdate").value=id;
+        document.getElementById("nameUpdate").value=name;
+        document.getElementById("costUpdate").value=cost;
+    }
+
+</script>
