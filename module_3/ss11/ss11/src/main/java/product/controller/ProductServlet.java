@@ -24,14 +24,20 @@ public class ProductServlet extends HttpServlet {
                 request.getRequestDispatcher("/view/create.jsp").forward(request, response);
                 break;
             case "search":
-                String name=request.getParameter("name");
+                String name = request.getParameter("name");
                 request.setAttribute("productList", iProductService.findByName(name));
                 request.getRequestDispatcher("/view/list.jsp").forward(request, response);
                 break;
             case "delete":
-                int idDelete=Integer.parseInt(request.getParameter("id"));
+                int idDelete = Integer.parseInt(request.getParameter("id"));
                 iProductService.deleteId(idDelete);
                 response.sendRedirect("/product");
+                break;
+            case "update":
+                int idUpdate = Integer.parseInt(request.getParameter("id"));
+                Product product = iProductService.findById(idUpdate);
+                request.setAttribute("product", product);
+                request.getRequestDispatcher("/view/update.jsp").forward(request, response);
                 break;
             default:
                 request.setAttribute("productList", iProductService.getOn());
@@ -56,13 +62,16 @@ public class ProductServlet extends HttpServlet {
                 request.getRequestDispatcher("/view/create.jsp").forward(request, response);
                 break;
             case "update":
-                int idUpdate=Integer.parseInt(request.getParameter("id"));
-                String nameUpdate=request.getParameter("name");
-                int costUpdate= Integer.parseInt(request.getParameter("cost"));
+                int idUpdate = Integer.parseInt(request.getParameter("id"));
+                String nameUpdate = request.getParameter("name");
+                int costUpdate = Integer.parseInt(request.getParameter("cost"));
+                request.setAttribute("id", idUpdate);
+                request.setAttribute("name", nameUpdate);
+                request.setAttribute("cost", costUpdate);
                 Product product1=new Product(idUpdate,nameUpdate,costUpdate);
-                iProductService.update(product1);
-
-
+                iProductService.update(idUpdate,product1);
+                response.sendRedirect("/product");
+                break;
         }
     }
 }

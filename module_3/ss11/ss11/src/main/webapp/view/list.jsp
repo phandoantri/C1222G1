@@ -38,7 +38,7 @@
                 <button ><a href="/product?action=delete&id=${product.getId()}">delete</a></button>
             </td>
             <td>
-                <button><a href="/product?action=update&id=${product.getId()} ${product.getName()} ${product.getCost()}">update</a></button>
+                <button><a href="/product?action=update&id=${product.getId()}">update</a></button>
             </td>
         </tr>
     </c:forEach>
@@ -51,10 +51,6 @@
     function deleteId(id) {
         document.getElementById("idDelete").value=id;
     }
-    function update(id,name,cost){
-        document.getElementById("idUpdate").value=id;
-        document.getElementById("nameUpdate").value=name;
-        document.getElementById("costUpdate").value=cost;
-    }
+
 
 </script>

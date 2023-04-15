@@ -19,6 +19,7 @@
     <th>name</th>
     <th>email</th>
     <th>country</th>
+    <th>delete</th>
   </tr>
   </thead>
   <tbody>
@@ -27,6 +28,9 @@
     <td>${user.getName()}</td>
     <td>${user.getEmail()}</td>
     <td>${user.getCountry()}</td>
+    <td>
+      <button ><a href="/user">delete</a></button>
+    </td>
     </tr>
   </c:forEach>
   <tr>

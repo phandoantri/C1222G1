@@ -1,8 +1,6 @@
 package product.repository;
 
 import product.model.Product;
-import product.service.IProductService;
-import product.service.ProductService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +38,7 @@ public class ProductRepository implements IProductRepository {
     @Override
     public void deleteId(int id) {
         for (int i = 0; i < productList.size(); i++) {
-            if (productList.get(i).getId()==id){
+            if (productList.get(i).getId() == id) {
                 productList.remove(i);
                 break;
             }
@@ -48,7 +46,23 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void update(Product product) {
+    public Product findById(int id) {
+        for (int i = 0; i < productList.size(); i++) {
+            if (productList.get(i).getId() == id) {
+                 return productList.get(i);
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void update(int id,Product product) {
+for (int i=0;i<productList.size();i++){
+    if (productList.get(i).getId()==id){
+        productList.set(i,product);
+        break;
+    }
+}
 
     }
 }
