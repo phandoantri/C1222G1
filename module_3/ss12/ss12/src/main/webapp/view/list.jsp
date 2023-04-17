@@ -12,14 +12,11 @@
     <title>Title</title>
 </head>
 <body>
-<button> <a href="/user?action=create">create</a></button>
-<form>
-    <div class="input-group">
-        <label for=""></label>
-        <input type="text"
-               class="form-control" name="name" id="" aria-describedby="helpId" placeholder="">
-
-    </div>
+<button><a href="/user?action=create">create</a></button>
+<form action="/user">
+    <input type="text" name="countryName">
+    <input type="hidden" name="action" value="search">
+    <button type="submit">search</button>
 
 </form>
 <table class="table">
@@ -40,6 +37,9 @@
             <td>${user.getCountry()}</td>
             <td>
                 <button><a href="/user?action=delete&id=${user.getId()}">delete</a></button>
+            </td>
+            <td>
+                <button><a href="/user?action=update&id=${user.getId()}">update</a></button>
             </td>
         </tr>
     </c:forEach>

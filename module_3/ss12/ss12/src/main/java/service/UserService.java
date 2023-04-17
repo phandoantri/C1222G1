@@ -22,4 +22,20 @@ public class UserService implements IUserService{
     public void delete(int id) {
         iUserRepository.delete(id);
     }
+
+    @Override
+    public List<User> findByCountry(String name) {
+        return iUserRepository.findByCountry(name);
+    }
+
+    @Override
+    public User findById(int id) {
+      User user=iUserRepository.findById(id);
+      return user;
+    }
+
+    @Override
+    public void update(int id, User user) {
+        iUserRepository.update(id,user);
+    }
 }

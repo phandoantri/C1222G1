@@ -1,0 +1,349 @@
+<mxfile host="app.diagrams.net" modified="2023-04-15T15:35:41.730Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="SDrqjXiocXZvGE8dNjQB" version="21.1.5" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2944" dy="2911" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-0" value="Module 3" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="205" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-1" value="Static web và Dynamic web" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="150" y="50" width="590" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-2" value="Static web" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-1">
+          <mxGeometry y="20" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-5" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Các web chỉ được xây dựng dựa&lt;br&gt;&amp;nbsp;trên ngôn ngữ HTML và CSS&lt;br&gt;-Data ít khi phải cập nhật&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-2">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-3" value="Lane 2" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-1">
+          <mxGeometry x="250" y="20" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Các web được xây đựng dựa trên 2 dòng ngôn ngữ &lt;br&gt;là Back -end và front-end&lt;br&gt;-Data thì luôn thay đổi và cập nhật liên tục&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-3">
+          <mxGeometry x="-4.547473508864641e-13" y="15" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-7" value="HTTP và HTTPS" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="320" width="450" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-8" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;HTTP(Hyper Text Transfer Protocol):&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;HTTPS(Hyper Text Transfer Protocol Secure)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Giao thức truyền tải siêu văn bản&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-7">
+          <mxGeometry x="80" y="25" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-9" value="HTTP và HTTPS" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="450" width="479.99999999999955" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-10" value="HTTP" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-9">
+          <mxGeometry y="20" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-13" value="-Thông tin không bảo mật" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-10">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-11" value="HTTPS" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-9">
+          <mxGeometry x="170" y="20" width="309.99999999999955" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-14" value="-Thông tin gửi đi sẽ được mã hóa nên sẽ bảo mật hơn" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-11">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-15" value="Get và Post" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-550" y="205" width="569.9999999999995" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-16" value="Get" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-15">
+          <mxGeometry y="20" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-19" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Thông tin sẽ hiển thị trên thanh URL&lt;br&gt;-Kém bảo mật&lt;br&gt;-Data chỉ gửi được dưới dạng character&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-16">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-17" value="Post" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-15">
+          <mxGeometry x="280" y="20" width="289.99999999999955" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-20" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Data không hiển thị ở thanh URL&lt;br&gt;-Bảo mật hơn&lt;br&gt;-Có thể gửi data ở dạng hình ảnh, âm thanh....&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-17">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-22" value="JSP&amp;nbsp; và Servlet" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-429.99999999999955" y="350" width="550" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-23" value="JSP" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-22">
+          <mxGeometry y="20" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Là mã được viết nghiêng về phía HTML&lt;br&gt;-Tốc độ sử lý chậm hơn&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-23">
+          <mxGeometry x="-4.547473508864641e-13" y="25" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-24" value="servlet" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-22">
+          <mxGeometry x="270" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-27" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Là mã được viết nghiêng về phía JAVA&lt;br&gt;-Tốc độ xử lý nhanh hơn&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-24">
+          <mxGeometry x="-4.547473508864641e-13" y="25" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-28" value="doGet() và doPost()" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-413" y="480" width="510" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-29" value="doGet()" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-28">
+          <mxGeometry y="20" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Thông tin hiển thị trên thanh URL&lt;br&gt;-Bị giới hạn số ký tự&lt;br&gt;-Thông tin không được mã hóa&lt;br&gt;-Tốc độ xử lý nhanh hơn&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-29">
+          <mxGeometry y="20" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-30" value="doPost()" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-28">
+          <mxGeometry x="250" y="20" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-34" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Thông tin không hiển thị trên thanh URL&lt;br&gt;-Ký tự tùy vào miền mua&lt;br&gt;-Thông tin được mã hóa&lt;br&gt;-Tốc độ xử lý chậm hơn&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-30">
+          <mxGeometry y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-39" value="Request và response" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="220" y="570" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-40" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Request là yêu cầu người dừng gửi đến server còn&lt;br&gt;&amp;nbsp;response là kết quả do server trả về lại cho người dùng&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-39">
+          <mxGeometry y="30" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-41" value="forward và redirect" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-199.99999999999955" y="-130" width="1309.9999999999995" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-42" value="forward" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-41">
+          <mxGeometry y="20" width="649.9999999999995" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-45" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Khi 1 yêu cầu&amp;nbsp;của trình duyệt gửi tới một&amp;nbsp;&lt;strong style=&quot;box-sizing: border-box; color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;Servlet&lt;/strong&gt;&lt;span style=&quot;color: rgb(68, 68, 68); font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;, nó có thể chuyển tiếp yêu cầu tới một trang khác &lt;br&gt;(hoặc một servlet khác). Địa chỉ trên trình duyệt của người dùng vẫn là đường dẫn của trang đầu tiên,&lt;br&gt;&amp;nbsp;nhưng nội dung của trang do trang được chuyển tiếp tới tạo ra.&lt;/span&gt;&lt;br&gt;&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-42">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="650" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-43" value="redirect" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-41">
+          <mxGeometry x="649.9999999999995" y="20" width="660" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-46" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Khi một yêu cầu (request) từ phía người dùng tới một Servlet (Trang A),&lt;br&gt;&amp;nbsp;servlet này có thể chuyển yêu cầu này tới một trang khác (Trang B), và kết thúc nhiệm vụ của nó.&lt;br&gt;&amp;nbsp;Trang được chuyển hướng tới có thể là trang trong ứng dụng của bạn, hoặc có thể là một trang bất kỳ. &lt;br&gt;Địa chỉ trên trình duyệt của người dùng lúc này sẽ hiển thị đường dẫn của trang B.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-43">
+          <mxGeometry y="20" width="660" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-47" value="JSTL" style="swimlane;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="780" y="50" width="410" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-48" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-JSP Standard Tag Library là bộ thư viện thẻ được xây dựng&lt;br&gt;&amp;nbsp;dựa trên ngôn ngữ Java&lt;br&gt;-Một số thẻ thường dùng như:&amp;lt;forEach&amp;gt;,&amp;lt;choose&amp;gt;,&amp;lt;when&amp;gt;...&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-47">
+          <mxGeometry y="30" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-49" value="Mô hình MVC" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="640" y="184" width="400" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-50" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Model:là thành phần mô tả dữ liệu,xủ lý nghiệp vụ, validate dữ liệu và tương tác trực tiếp với database&amp;nbsp;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-49">
+          <mxGeometry y="26" width="400" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-51" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-View:Là giao diện để người dùng tương tác với hệ thống&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-49">
+          <mxGeometry y="70" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-52" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Controller:điều hướng,nhận, gửi dữu liệu từ View và Model&amp;nbsp;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-49">
+          <mxGeometry y="96" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-53" value="Cách xử lý request ở MVC?" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1090" y="190" width="740" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-54" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Khi có 1 request từ người dùng=&amp;gt;Controller sẽ nhận request và gửi dữ liệu sang model để sử lý.&lt;br&gt;Model sẽ thực hiện validate,tính toán dữu liệu(nếu cần truy cập DB thì model sẽ kết nối đến DB để xử lý)&lt;br&gt;Sau đó sẽ gửi dữ liệu sang lại controller,controller sẽ render data đến view,view sẽ hiển thị thông tin cho người dùng&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-53">
+          <mxGeometry y="30" width="740" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-55" value="Statement và PreparedStatement" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="790" y="360" width="679.9999999999995" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-56" value="Statement" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-55">
+          <mxGeometry y="20" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-59" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Dùng để tạo các câu truy vấn tĩnh&lt;br&gt;-Lỗ hổng về bảo mật(SQL injection)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-56">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-57" value="Prepared Statement" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-55">
+          <mxGeometry x="270" y="20" width="409.99999999999955" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-60" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Tạo các câu truy vấn động(truyền tham số ? vào được)&lt;br&gt;-Bởi vì tham số ? nên sẽ ngăn chặn được cơ chế SQL ịnection&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-57">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="410" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-61" value="Phân biệt" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-694.9999999999995" y="720" width="2219.9999999999995" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-62" value="Ant" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-61">
+          <mxGeometry y="20" width="739.9999999999995" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-65" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-là một trong những công cụ đóng gói hiện đại và nhanh chóng được sử dụng &lt;br&gt;trong các dự án sử dụng ngôn ngữ Java. Ant cho phép nhà phát triển mô tả meta-data của dự án &lt;br&gt;cũng như các hoạt động trong quá trình build bằng việc sử dụng cú pháp XML. Tuy nhiên những đoạn mã viết theo&lt;br&gt;&amp;nbsp;tiêu chuẩn của Ant quá dài và phức tạp.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-62">
+          <mxGeometry x="-4.547473508864641e-13" y="31" width="740" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-63" value="Maven" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-61">
+          <mxGeometry x="739.9999999999995" y="20" width="690" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-66" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-L&lt;span style=&quot;font-size: medium; background-color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;&quot;&gt;à một chương trình quản lý dự án cho phép các lập trình viên có thể quản lý về version,&lt;br&gt;&amp;nbsp;các thư viện sử dụng trong dự án, quản lý build,&lt;/span&gt;&lt;span style=&quot;font-size: medium; background-color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;&quot;&gt;Nó giúp chúng ta đơn giản hoá và chuẩn hoá &lt;br&gt;quá trình xây dựng dự án và nó hoàn toàn free.&lt;/span&gt;&lt;span style=&quot;font-size: medium; background-color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-63">
+          <mxGeometry y="21" width="690" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-64" value="Gradle" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-61">
+          <mxGeometry x="1429.9999999999995" y="20" width="790" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-67" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Gradle là một hệ thống tự động build mã nguồn mở dựa trên các khái niệm về Apache Ant và Apache Maven.&amp;nbsp;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-64">
+          <mxGeometry y="21" width="710" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-70" value="Servlet Container" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-743" y="50" width="660" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-71" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Servlet container thực chất là một phần của một web server tương tác với các servlet. &lt;br&gt;Và đúng như tên gọi servlet container giống như 1 cái thùng chứa, chứa tất cả các servlet ở bên trong.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-70">
+          <mxGeometry y="25" width="660" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-72" value="Vòng đời servlet" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-890" y="-210" width="633" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-73" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Một&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; box-sizing: border-box; font-weight: 700;&quot;&gt;vòng đời của servlet&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;có thể được định nghĩa là toàn bộ quá trình từ khi tạo ra đến khi hủy.&lt;br&gt;&amp;nbsp;Sau đây là tổng quan về vòng đời của servlet:&lt;/span&gt;&lt;/font&gt;&lt;ul style=&quot;box-sizing: border-box; margin: 0em 0.2em 1em 4rem; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Servlet được khởi tạo bằng cách gọi phương thức&amp;nbsp;&lt;b style=&quot;box-sizing: border-box;&quot;&gt;init ()&lt;/b&gt;.&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Phương thức servlet&amp;nbsp;&lt;b style=&quot;box-sizing: border-box;&quot;&gt;service()&lt;/b&gt;&amp;nbsp;được gọi để xử lý yêu cầu của khách hàng.&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Servlet được hủy bằng cách gọi phương thức&amp;nbsp;&lt;b style=&quot;box-sizing: border-box;&quot;&gt;destroy()&lt;/b&gt;.&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Cuối cùng, servlet được thu thập bởi bộ sưu tập rác của JVM.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-72">
+          <mxGeometry y="20" width="620" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-74" value="Vòng đời JSP" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-730" y="-410" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-75" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Vòng đời của JSP bao gồm&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; box-sizing: border-box; font-weight: 700;&quot;&gt;4 pha&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif;&quot;&gt;sau:&lt;/span&gt;&lt;/font&gt;&lt;ul style=&quot;box-sizing: border-box; margin: 0em 0.2em 1em 4rem; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Biên dịch (Compilation).&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Khởi tạo (Initialization).&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Thực thi (Execution).&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box; list-style-type: disc;&quot;&gt;&lt;font size=&quot;3&quot;&gt;Hủy (Cleanup).&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-74">
+          <mxGeometry y="30" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-76" value="phân biệt" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1241.0000000000005" y="30" width="1269.9999999999995" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-77" value="Mô hình MVC1" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-76">
+          <mxGeometry y="20" width="569.9999999999995" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-80" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Controller và view đều là JSP, yêu cầu từ phía client sẽ được gửi tới trang JSP ban đầu &lt;br&gt;và được controller xử lý, sau đó truyền lệnh thực thi đến JavaBeans,&lt;br&gt;các JavaBeans lấy dữ liệu từ database trả về trang JSP ban đầu theo yêu cầu request.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-77">
+          <mxGeometry x="-4.547473508864641e-13" y="20" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-78" value="Mô hình MVC2" style="swimlane;startSize=20;html=1;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-76">
+          <mxGeometry x="569.9999999999995" y="20" width="700" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-81" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Các Controller là servlet còn model là class của Java,view là các trang JSP.&lt;br&gt;Các logic phức tạp được viết ở controller,các servlet nhận yêu cầu từ client qua xử lý được gửi cho model và &lt;br&gt;view để tương tác kết quả cho client&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-78">
+          <mxGeometry y="20" width="700" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-82" value="Transaction" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-220" y="-360" width="800" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-83" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;là một tiến trình xử lý có&amp;nbsp;&lt;span style=&quot;box-sizing: border-box; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-weight: 600; font-stretch: inherit; line-height: inherit; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; color: rgb(36, 41, 47); letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;xác định điểm đầu và điểm cuối, được chia nhỏ thành các operation (phép thực thi)&lt;br&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;, tiến trình được&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-weight: 600; font-stretch: inherit; line-height: inherit; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; color: rgb(36, 41, 47); letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;thực thi một cách tuần tự và độc lập các operation&lt;/span&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;đó theo nguyên tắc hoặc&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-weight: 600; font-stretch: inherit; line-height: inherit; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; color: rgb(36, 41, 47); letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;tất cả đều thành công&lt;/span&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;&lt;br&gt;hoặc&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-weight: 600; font-stretch: inherit; line-height: inherit; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; color: rgb(36, 41, 47); letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;một operation thất bại thì toàn bộ tiến trình thất bại&lt;/span&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;. Nếu việc thực thi một&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alternates: inherit; font-weight: 600; font-stretch: inherit; line-height: inherit; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; color: rgb(36, 41, 47); letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;operation nào đó bị fail (hỏng) đồng nghĩa &lt;br&gt;với việc dữ liệu phải rollback (trở lại) trạng thái ban đầu&lt;/span&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; letter-spacing: -0.048px; background-color: rgb(255, 255, 255);&quot;&gt;.&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-82">
+          <mxGeometry y="30" width="800" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-85" value="ACID" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="-620" width="580" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-86" value="&lt;ul style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; padding-left: 2em; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot; id=&quot;yui_3_17_2_1_1681572303803_21&quot; class=&quot;list&quot;&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Atomicity&amp;nbsp;nghĩa là tất cả thành công hoặc không.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;Consistency&lt;/span&gt;&amp;nbsp;bảo đảm rằng tính đồng nhất của dữ liệu.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;Isolation&lt;/span&gt;&amp;nbsp;bảo đảm rằng Transaction này là độc lập với Transaction khác.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;Durability&lt;/span&gt;&amp;nbsp;nghĩa là khi một Transaction đã được ký thác thì nó sẽ vẫn tồn tại&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li style=&quot;box-sizing: border-box;&quot;&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;&quot;&gt;&lt;font size=&quot;3&quot;&gt;&amp;nbsp;như thế cho dù xảy ra các lỗi, …&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-85">
+          <mxGeometry y="26" width="580" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-87" value="Lợi ích sử dụng transaction" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-75" y="-1180" width="745" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-88" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-&amp;nbsp;Với các ứng dụng trung bình và lớn, việc quản lý riêng Transaction&lt;br&gt;&amp;nbsp;giúp bạn cải thiện rõ rệt hiệu suất và duy trì tính toàn vẹn của tiến trình.&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-87">
+          <mxGeometry y="30" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-89" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Trong JDBC, Connection Interface cung cấp các phương thức sau để quản lý transaction:&lt;/font&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;1.&lt;/span&gt;&amp;nbsp;void setAutoCommit(boolean status)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Là true theo mặc định. Để thao tác với Transaction, bạn nên thiết lập về false.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;2.&lt;/span&gt;&amp;nbsp;void commit()&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Để ký thác các thay đổi bạn đã thực hiện.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;3.&lt;/span&gt;&amp;nbsp;void rollback()&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Xóa tất cả các thay đổi đã được thực hiện trước đó và quay về trạng thái trước khi thực hiện thay đổi.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;4.&lt;/span&gt;&amp;nbsp;setSavepoint(String ten_cua_savepoint)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Định nghĩa một savepoint mới. Phương thức này cũng trả về một đối tượng Savepoint.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;5.&lt;/span&gt;&amp;nbsp;releaseSavepoint(Savepoint ten_cua_savepoint)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Xóa một savepoint. Phương thức này nhận một đối tượng Savepoint làm tham số.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;box-sizing: border-box;&quot;&gt;6.&lt;/span&gt;&amp;nbsp;rollback (String ten_cua_savepoint)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(82, 96, 105); font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font size=&quot;3&quot;&gt;Quay về trạng thái của savepoint đã cho.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-87">
+          <mxGeometry x="5" y="80" width="740" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-90" value="savePoint" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="700" y="-395" width="370" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-91" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;-Tạo các điểm (point) bên trong các nhóm Transaction &lt;br&gt;để ROLLBACK, tức là để quay trở lại điểm trạng thái đó&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4DlN-TuOz9uffhFvDTr6-90">
+          <mxGeometry y="30" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-92" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-0" target="4DlN-TuOz9uffhFvDTr6-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="330" as="sourcePoint" />
+            <mxPoint x="630" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-93" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-0" target="4DlN-TuOz9uffhFvDTr6-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="330" as="sourcePoint" />
+            <mxPoint x="630" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-94" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-51" target="4DlN-TuOz9uffhFvDTr6-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="330" as="sourcePoint" />
+            <mxPoint x="630" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-95" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.45;exitY=0.995;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-0" target="4DlN-TuOz9uffhFvDTr6-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="330" as="sourcePoint" />
+            <mxPoint x="890" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-96" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.431;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-8" target="4DlN-TuOz9uffhFvDTr6-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="330" as="sourcePoint" />
+            <mxPoint x="890" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-97" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.108;exitY=1.073;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-14" target="4DlN-TuOz9uffhFvDTr6-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="530" as="sourcePoint" />
+            <mxPoint x="700" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-98" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.548;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-39" target="4DlN-TuOz9uffhFvDTr6-61">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="630" as="sourcePoint" />
+            <mxPoint x="700" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-99" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.003;entryY=0.156;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-0" target="4DlN-TuOz9uffhFvDTr6-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="430" as="sourcePoint" />
+            <mxPoint x="140" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-100" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.476;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-17" target="4DlN-TuOz9uffhFvDTr6-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="430" as="sourcePoint" />
+            <mxPoint x="140" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-101" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-24" target="4DlN-TuOz9uffhFvDTr6-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="430" as="sourcePoint" />
+            <mxPoint x="140" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-102" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-15" target="4DlN-TuOz9uffhFvDTr6-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="330" as="sourcePoint" />
+            <mxPoint x="140" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-103" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-53" target="4DlN-TuOz9uffhFvDTr6-77">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="170" as="sourcePoint" />
+            <mxPoint x="1290" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-104" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.516;exitY=-0.042;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-70" target="4DlN-TuOz9uffhFvDTr6-72">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-420" y="-30" as="sourcePoint" />
+            <mxPoint x="-370" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-105" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.52;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-72" target="4DlN-TuOz9uffhFvDTr6-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-420" y="-30" as="sourcePoint" />
+            <mxPoint x="-370" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-106" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.483;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-1" target="4DlN-TuOz9uffhFvDTr6-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="-30" as="sourcePoint" />
+            <mxPoint x="470" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-107" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-41" target="4DlN-TuOz9uffhFvDTr6-82">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="-30" as="sourcePoint" />
+            <mxPoint x="470" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-108" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.616;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.004;entryY=0.56;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-83" target="4DlN-TuOz9uffhFvDTr6-91">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="-370" as="sourcePoint" />
+            <mxPoint x="700" y="-280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-109" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.432;entryY=1.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-82" target="4DlN-TuOz9uffhFvDTr6-86">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="-370" as="sourcePoint" />
+            <mxPoint x="550" y="-420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4DlN-TuOz9uffhFvDTr6-110" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.49;exitY=-0.001;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.478;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4DlN-TuOz9uffhFvDTr6-85" target="4DlN-TuOz9uffhFvDTr6-89">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="-600" as="sourcePoint" />
+            <mxPoint x="350" y="-650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -28,6 +28,18 @@ public class userServlet extends HttpServlet {
                 iUserService.delete(idDelete);
                 response.sendRedirect("/user");
                 break;
+            case "search":
+                String countryName=request.getParameter("countryName");
+                request.setAttribute("userList",iUserService.findByCountry(countryName));
+                request.getRequestDispatcher("/view/list.jsp").forward(request,response);
+                break;
+            case "update":
+                int idUpdate=Integer.parseInt(request.getParameter("id"));
+                User user=iUserService.findById(idUpdate);
+                request.setAttribute("user",user);
+                request.getRequestDispatcher("/view/update.jsp").forward(request,response);
+                break;
+
             default:
                 request.setAttribute("userList", iUserService.getOn());
                 request.getRequestDispatcher("/view/list.jsp").forward(request, response);
@@ -51,6 +63,16 @@ public class userServlet extends HttpServlet {
                 request.setAttribute("user",iUserService.getOn());
                 request.getRequestDispatcher("/view/list.jsp").forward(request,response);
                 break;
+            case "update":
+                int idUpdate=Integer.parseInt(request.getParameter("id"));
+                String nameUpdate=request.getParameter("name");
+                String emailUpdate=request.getParameter("email");
+                String countryUpdate=request.getParameter("country");
+                User user1=new User(idUpdate,nameUpdate,emailUpdate,countryUpdate);
+                iUserService.update(idUpdate,user1);
+                response.sendRedirect("/user");
+                break;
+
         }
     }
 }
