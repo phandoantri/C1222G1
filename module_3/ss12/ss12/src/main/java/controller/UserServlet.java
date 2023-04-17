@@ -9,8 +9,8 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "userServlet", value = "/user")
-public class userServlet extends HttpServlet {
+@WebServlet(name = "UserServlet", value = "/user")
+public class UserServlet extends HttpServlet {
     private IUserService iUserService = new UserService();
 
     @Override

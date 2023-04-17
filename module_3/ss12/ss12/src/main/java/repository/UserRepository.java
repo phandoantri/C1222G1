@@ -11,13 +11,18 @@ import java.util.List;
 
 
 public class UserRepository implements IUserRepository {
-
+    private static final String INSERT_USERS_SQL = "INSERT INTO user (name, email, country) VALUES (?, ?, ?);";
+    private static final String SELECT_USER_BY_COUNTRYNAME = "select id,name,email,country from user where country like concat('%',?,'%');";
+    private static final String SELECT_ALL_USERS = "select * from user";
+    private static final String DELETE_USERS_SQL = "delete from user where id = ?;";
+    private static final String UPDATE_USERS_SQL = "update user set name = ?,email= ?, country =? where id = ?;";
+    private static final String SELECT_USER_BY_ID = "select id,name,email,country from user where id =?";
     @Override
     public List<User> getOn() {
         List<User> userList = new ArrayList<>();
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("select *from user");
+                    prepareStatement(SELECT_ALL_USERS);
             ResultSet resultSet = preparedStatement.executeQuery();
             User user;
             while (resultSet.next()) {
@@ -38,7 +43,7 @@ public class UserRepository implements IUserRepository {
     public void save(User user) {
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("insert into user(name,email,country) values (?,?,?);");
+                    prepareStatement(INSERT_USERS_SQL);
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
             preparedStatement.setString(3, user.getCountry());
@@ -53,7 +58,7 @@ public class UserRepository implements IUserRepository {
     public void delete(int id) {
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("delete from user where id=?;");
+                    prepareStatement(DELETE_USERS_SQL);
             preparedStatement.setInt(1, id);
             preparedStatement.executeUpdate();
 
@@ -67,7 +72,7 @@ public class UserRepository implements IUserRepository {
         List<User> userList = new ArrayList<>();
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("select id,name,email,country from user where country like concat('%',?,'%');");
+                    prepareStatement(SELECT_USER_BY_COUNTRYNAME);
             preparedStatement.setString(1,country );
             ResultSet resultSet = preparedStatement.executeQuery();
             User user;
@@ -90,7 +95,7 @@ public class UserRepository implements IUserRepository {
 
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("select id,name,email,country from user where id =?");
+                    prepareStatement(SELECT_USER_BY_ID);
             preparedStatement.setInt(1,id);
             ResultSet resultSet = preparedStatement.executeQuery();
             User user = null;
@@ -113,7 +118,7 @@ public class UserRepository implements IUserRepository {
     public void update(int id, User user) {
         try {
             PreparedStatement preparedStatement = BaseRepository.getConnection().
-                    prepareStatement("UPDATE user SET name = ?, email = ?,country=? WHERE id=?");
+                    prepareStatement(UPDATE_USERS_SQL);
 
             preparedStatement.setString(1, user.getName());
             preparedStatement.setString(2, user.getEmail());
