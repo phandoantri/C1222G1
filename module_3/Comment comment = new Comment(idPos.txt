@@ -1,0 +1,1 @@
+ Comment comment = new Comment(idPost, content, idAccount, java.sql.Date.valueOf(request.getParameter("commentDay")));
